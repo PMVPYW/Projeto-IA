@@ -2,3 +2,12 @@
 .DS_Store
 **/.DS_Store
 /.idea
+
+
+# Ignore all subfolders named __pycache__
+**/__pycache__/
+
+# Ignore folders named __pycache__ in the root directory
+__pycache__/
+
+*.pyc
