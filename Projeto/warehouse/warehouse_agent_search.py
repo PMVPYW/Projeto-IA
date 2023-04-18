@@ -10,13 +10,13 @@ from warehouse.heuristic_warehouse import HeuristicWarehouse
 from warehouse.pair import Pair
 
 
-class WarehouseAgentSearch(Agent):
+class WarehouseAgentSearch(Agent):#agente que executa A*
     S = TypeVar('S', bound=State)
 
     def __init__(self, environment: S):
         super().__init__()
         self.initial_environment = environment
-        self.heuristic = HeuristicWarehouse()
+        self.heuristic = HeuristicWarehouse() #heuristica é simples
         self.forklifts = []
         self.products = []
         self.exit = None
@@ -30,7 +30,7 @@ class WarehouseAgentSearch(Agent):
                 elif environment.matrix[i][j] == constants.PRODUCT:
                     self.products.append(Cell(i, j))
 
-
+        #guardar os pares
         for a in self.forklifts:
             for p in self.products:
                 self.pairs.append(Pair(a, p))

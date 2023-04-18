@@ -7,16 +7,17 @@ from agentsearch.state import State
 from agentsearch.action import Action
 
 
-class WarehouseState(State[Action]):
+class WarehouseState(State[Action]):#podemos adicionar/alterar métodos
 
     def __init__(self, matrix: ndarray, rows, columns):
         super().__init__()
-        # TODO
+        # TODO //ver puzzle8
 
         self.rows = rows
         self.columns = columns
         self.matrix = np.full([self.rows, self.columns], fill_value=0, dtype=int)
 
+        #possivel otimizar(dá pontos)
         for i in range(self.rows):
             for j in range(self.columns):
                 self.matrix[i][j] = matrix[i][j]

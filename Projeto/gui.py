@@ -618,7 +618,7 @@ class SearchSolver(threading.Thread):
         self.agent.stop()
 
     def run(self):
-        # TODO calculate pairs distances
+        # TODO calculate pairs distances #(calcular caminho(solução), custo e armazenar algures) (porque não guardar a solução e o custo na class par?)
 
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
