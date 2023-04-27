@@ -7,17 +7,18 @@ from agentsearch.state import State
 from agentsearch.action import Action
 
 
-class WarehouseState(State[Action]):#podemos adicionar/alterar métodos
+class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def __init__(self, matrix: ndarray, rows, columns):
         super().__init__()
         # TODO //ver puzzle8
+        # //question --> agent can be in exit cell?
 
         self.rows = rows
         self.columns = columns
         self.matrix = np.full([self.rows, self.columns], fill_value=0, dtype=int)
 
-        #possivel otimizar(dá pontos)
+        # possivel otimizar(dá pontos)
         for i in range(self.rows):
             for j in range(self.columns):
                 self.matrix[i][j] = matrix[i][j]
@@ -29,36 +30,44 @@ class WarehouseState(State[Action]):#podemos adicionar/alterar métodos
                     self.column_exit = j
 
     def can_move_up(self) -> bool:
-        # TODO
-        pass
+        if self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] != 0:
+            return False
+        return True
 
     def can_move_right(self) -> bool:
-        # TODO
-        pass
+        if self.column_forklift == self.columns - 1 or self.matrix[self.line_forklift][self.column_forklift + 1] != 0:
+            return False
+        return True
 
     def can_move_down(self) -> bool:
-        # TODO
-        pass
+        if self.line_forklift == self.rows - 1 or self.matrix[self.line_forklift + 1][self.column_forklift] != 0:
+            return False
+        return True
 
     def can_move_left(self) -> bool:
-        # TODO
-        pass
+        if self.column_forklift == 0 or self.matrix[self.line_forklift][self.column_forklift - 1]:
+            return False
+        return True
 
     def move_up(self) -> None:
-        # TODO
-        pass
+        if not self.can_move_up():
+            return
+        self.line_forklift -= 1;
 
     def move_right(self) -> None:
-        # TODO
-        pass
+        if not self.can_move_right():
+            return
+        self.column_forklift += 1
 
     def move_down(self) -> None:
-        # TODO
-        pass
+        if not self.can_move_down():
+            return
+        self.line_forklift += 1;
 
     def move_left(self) -> None:
-        # TODO
-        pass
+        if not self.can_move_left():
+            return
+        self.column_forklift -= 1
 
     def get_cell_color(self, row: int, column: int) -> Color:
         if row == self.line_exit and column == self.column_exit and (
