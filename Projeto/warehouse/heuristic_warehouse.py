@@ -8,9 +8,14 @@ class HeuristicWarehouse(Heuristic[WarehouseProblemSearch, WarehouseState]):
     def __init__(self):
         super().__init__()
 
-    def compute(self, state: WarehouseState) -> float:
-        # TODO
-        pass
+    def compute(self, state: WarehouseState) -> float: #Manhattan distance
+        #TODO
+        h = 0
+        for i in range(state.rows):
+            for j in range(state.columns):
+                if state.matrix[i][j] == 2:
+                    pass
+
 
     def __str__(self):
         return "# TODO"

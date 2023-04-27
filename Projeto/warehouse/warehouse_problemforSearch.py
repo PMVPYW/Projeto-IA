@@ -27,6 +27,6 @@ class WarehouseProblemSearch(Problem[WarehouseState]):
         return successor
 
     def is_goal(self, state: WarehouseState) -> bool:
-        # TODO
-        pass
+        # TODO //possible wrong
+        return self.goal_position == Cell(self.state.line_forklift, self.state.column_forklift)
 
