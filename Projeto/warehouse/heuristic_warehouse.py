@@ -9,12 +9,13 @@ class HeuristicWarehouse(Heuristic[WarehouseProblemSearch, WarehouseState]):
         super().__init__()
 
     def compute(self, state: WarehouseState) -> float: #Manhattan distance
-        #TODO
+        #TODO --> check with teacher
         h = 0
-        for i in range(state.rows):
-            for j in range(state.columns):
-                if state.matrix[i][j] == 2:
-                    pass
+        goal_state = self._problem.goal_position
+        h+= abs( state.column_forklift - goal_state.column)
+        h+=abs(state.line_forklift - goal_state.line)
+        return h
+
 
 
     def __str__(self):
