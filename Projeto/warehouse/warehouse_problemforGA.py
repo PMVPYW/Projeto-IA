@@ -11,8 +11,10 @@ class WarehouseProblemGA(Problem):
         self.agent_search = agent_search
 
     def generate_individual(self) -> "WarehouseIndividual":
-        # TODO
-        pass
+        #TODO --> How many genes? Check
+        new_individual = WarehouseIndividual(self, len(self.products))
+        #TODO --> new_individual.initialise()?
+        return new_individual
 
     def __str__(self):
         string = "# of forklifts: "
