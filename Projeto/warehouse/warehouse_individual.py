@@ -5,10 +5,16 @@ class WarehouseIndividual(IntVectorIndividual):
     def __init__(self, problem: "WarehouseProblem", num_genes: int):
         super().__init__(problem, num_genes)
         # TODO
+        self.fitness = None
 
     def compute_fitness(self) -> float:
         # TODO
-        return 0
+        self.fitness = 0
+        distance = 0
+        for i in range(len(self.genome)):
+            if self.genome[i]:
+                distance+= self.problem.initial_state
+        return self.fitness
 
     def obtain_all_path(self):
         # TODO
