@@ -56,22 +56,30 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
     def move_up(self) -> None:
         if not self.can_move_up():
             return
+        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift -= 1;
+        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_right(self) -> None:
         if not self.can_move_right():
             return
+        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift += 1
+        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_down(self) -> None:
         if not self.can_move_down():
             return
+        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift += 1;
+        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_left(self) -> None:
         if not self.can_move_left():
             return
+        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift -= 1
+        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def get_cell_color(self, row: int, column: int) -> Color:
         if row == self.line_exit and column == self.column_exit and (
