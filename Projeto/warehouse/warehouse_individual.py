@@ -1,5 +1,6 @@
 from ga.individual_int_vector import IntVectorIndividual
 
+
 class WarehouseIndividual(IntVectorIndividual):
 
     def __init__(self, problem: "WarehouseProblem", num_genes: int):
@@ -13,7 +14,7 @@ class WarehouseIndividual(IntVectorIndividual):
         distance = 0
         for i in range(len(self.genome)):
             if self.genome[i]:
-                distance+= self.problem.initial_state
+                distance += self.problem.initial_state #TODO maybe its wrong
         return self.fitness
 
     def obtain_all_path(self):
@@ -22,7 +23,7 @@ class WarehouseIndividual(IntVectorIndividual):
 
     def __str__(self):
         string = 'Fitness: ' + f'{self.fitness}' + '\n'
-        string += str (self.genome) + "\n\n"
+        string += str(self.genome) + "\n\n"
         # TODO
         return string
 

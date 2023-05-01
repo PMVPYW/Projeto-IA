@@ -1,3 +1,5 @@
+import copy
+
 import numpy as np
 from PIL.ImageEnhance import Color
 from numpy import ndarray
@@ -19,15 +21,17 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
         self.matrix = np.full([self.rows, self.columns], fill_value=0, dtype=int)
 
         # possivel otimizar(dá pontos)
+        self.matrix = copy.deepcopy(matrix)
         for i in range(self.rows):
-            for j in range(self.columns):
-                self.matrix[i][j] = matrix[i][j]
-                if self.matrix[i][j] == constants.FORKLIFT:
-                    self.line_forklift = i
-                    self.column_forklift = j
-                if self.matrix[i][j] == constants.EXIT:
-                    self.line_exit = i
-                    self.column_exit = j
+            if constants.FORKLIFT in self.matrix[i] or constants.EXIT in self.matrix[i]:
+                for j in range(self.columns):
+                    #self.matrix[i][j] = matrix[i][j] //removed
+                    if self.matrix[i][j] == constants.FORKLIFT:
+                        self.line_forklift = i
+                        self.column_forklift = j
+                    if self.matrix[i][j] == constants.EXIT:
+                        self.line_exit = i
+                        self.column_exit = j
 
     def can_move_up(self) -> bool:
         if self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] != 0:
