@@ -29,9 +29,6 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
                     if self.matrix[i][j] == constants.FORKLIFT:
                         self.line_forklift = i
                         self.column_forklift = j
-                    if self.matrix[i][j] == constants.EXIT:
-                        self.line_exit = i
-                        self.column_exit = j
 
     def can_move_up(self) -> bool:
         if self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] != constants.EMPTY:
