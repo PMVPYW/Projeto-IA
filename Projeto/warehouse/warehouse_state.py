@@ -8,10 +8,12 @@ import constants
 from agentsearch.state import State
 from agentsearch.action import Action
 
+from Projeto.warehouse.cell import Cell
+
 
 class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
-    def __init__(self, matrix: ndarray, rows, columns):
+    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None):
         super().__init__()
         # TODO //ver puzzle8
         # //question --> agent can be in exit cell?
@@ -20,15 +22,16 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
         self.columns = columns
         self.matrix = np.copy(matrix)  # np.full([self.rows, self.columns], fill_value=0, dtype=int)
 
+        self.line_forklift = forklift_line
+        self.column_forklift = forklift_col
+
         # possivel otimizar(dá pontos)
+
 
         for i in range(self.rows):
             if constants.FORKLIFT in self.matrix[i] or constants.EXIT in self.matrix[i]:
                 for j in range(self.columns):
                     # self.matrix[i][j] = matrix[i][j] //removed
-                    if self.matrix[i][j] == constants.FORKLIFT:
-                        self.line_forklift = i
-                        self.column_forklift = j
                     if self.matrix[i][j] == constants.EXIT:
                         self.line_exit = i
                         self.column_exit = j
@@ -47,27 +50,19 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def move_up(self) -> None:
         if self.can_move_up():
-            self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
             self.line_forklift -= 1;
-            self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_right(self) -> None:
         if self.can_move_right():
-            self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
             self.column_forklift += 1
-            self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_down(self) -> None:
         if self.can_move_down():
-            self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
             self.line_forklift += 1;
-            self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def move_left(self) -> None:
         if self.can_move_left():
-            self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
             self.column_forklift -= 1
-            self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
 
     def get_cell_color(self, row: int, column: int) -> Color:
         if self.matrix[row][column] == constants.EXIT:

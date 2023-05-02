@@ -10,6 +10,7 @@ import queue
 import threading
 
 import constants
+from Projeto.warehouse.warehouse_problemforSearch import WarehouseProblemSearch
 from ga.genetic_operators.mutation2 import Mutation2
 from ga.genetic_operators.mutation3 import Mutation3
 from ga.genetic_operators.recombination3 import Recombination3
@@ -619,7 +620,8 @@ class SearchSolver(threading.Thread):
 
     def run(self):
         # TODO calculate pairs distances #(calcular caminho(solução), custo e armazenar algures) (porque não guardar a solução e o custo na class par?)
-
+        for pair in self.agent.pairs:
+            problem = WarehouseProblemSearch(WarehouseState(self.agent.initial_environment.matrix), pair)
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
