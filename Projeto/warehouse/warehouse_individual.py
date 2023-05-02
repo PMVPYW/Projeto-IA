@@ -9,7 +9,7 @@ class WarehouseIndividual(IntVectorIndividual):
         self.fitness = None
 
     def compute_fitness(self) -> float:
-        # TODO
+        # TODO - Check with teacher
         self.fitness = 0
         distance = 0
         for i in range(len(self.genome)):
