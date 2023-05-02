@@ -16,5 +16,7 @@ class HeuristicWarehouse(Heuristic[WarehouseProblemSearch, WarehouseState]):
         h += abs(state.line_forklift - goal_state.line)
         return h
 
+
     def __str__(self):
+        #TODO --> decide wich string we want
         return "# TODO"

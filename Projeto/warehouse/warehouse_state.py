@@ -18,14 +18,14 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
         self.rows = rows
         self.columns = columns
-        self.matrix = np.full([self.rows, self.columns], fill_value=0, dtype=int)
+        self.matrix = copy.deepcopy(matrix)  # np.full([self.rows, self.columns], fill_value=0, dtype=int)
 
         # possivel otimizar(dá pontos)
-        self.matrix = copy.deepcopy(matrix)
+
         for i in range(self.rows):
             if constants.FORKLIFT in self.matrix[i] or constants.EXIT in self.matrix[i]:
                 for j in range(self.columns):
-                    #self.matrix[i][j] = matrix[i][j] //removed
+                    # self.matrix[i][j] = matrix[i][j] //removed
                     if self.matrix[i][j] == constants.FORKLIFT:
                         self.line_forklift = i
                         self.column_forklift = j
@@ -34,22 +34,24 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
                         self.column_exit = j
 
     def can_move_up(self) -> bool:
-        if self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] != 0:
+        if self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] != constants.EMPTY:
             return False
         return True
 
     def can_move_right(self) -> bool:
-        if self.column_forklift == self.columns - 1 or self.matrix[self.line_forklift][self.column_forklift + 1] != 0:
+        if self.column_forklift == self.columns - 1 or self.matrix[self.line_forklift][
+            self.column_forklift + 1] != constants.EMPTY:
             return False
         return True
 
     def can_move_down(self) -> bool:
-        if self.line_forklift == self.rows - 1 or self.matrix[self.line_forklift + 1][self.column_forklift] != 0:
+        if self.line_forklift == self.rows - 1 or self.matrix[self.line_forklift + 1][
+            self.column_forklift] != constants.EMPTY:
             return False
         return True
 
     def can_move_left(self) -> bool:
-        if self.column_forklift == 0 or self.matrix[self.line_forklift][self.column_forklift - 1]:
+        if self.column_forklift == 0 or self.matrix[self.line_forklift][self.column_forklift - 1] != constants.EMPTY:
             return False
         return True
 
