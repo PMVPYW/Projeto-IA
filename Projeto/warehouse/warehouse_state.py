@@ -29,7 +29,7 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
 
         for i in range(self.rows):
-            if constants.FORKLIFT in self.matrix[i] or constants.EXIT in self.matrix[i]:
+            if constants.EXIT in self.matrix[i]:
                 for j in range(self.columns):
                     # self.matrix[i][j] = matrix[i][j] //removed
                     if self.matrix[i][j] == constants.EXIT:

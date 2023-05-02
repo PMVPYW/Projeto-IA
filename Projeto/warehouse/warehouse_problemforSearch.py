@@ -28,5 +28,5 @@ class WarehouseProblemSearch(Problem[WarehouseState]):
 
     def is_goal(self, state: WarehouseState) -> bool:
         # TODO //possible not wrong
-        return self.goal_position == Cell(self.state.line_forklift, self.state.column_forklift)
+        return self.goal_position == Cell(self.initial_state.line_forklift, self.initial_state.column_forklift)
 

@@ -3,6 +3,7 @@ class Pair:
         self.cell1 = cell1
         self.cell2 = cell2
         self.value = 0
+        self.path = None
         # TODO? --> guardar caminho e custo, verificar se coordenada é agente ou pick (picks guardados no agente(pick == agente))
 
     def hash(self):
