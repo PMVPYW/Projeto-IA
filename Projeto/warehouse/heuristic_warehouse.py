@@ -9,7 +9,7 @@ class HeuristicWarehouse(Heuristic[WarehouseProblemSearch, WarehouseState]):
         super().__init__()
 
     def compute(self, state: WarehouseState) -> float:  # Manhattan distance
-        # TODO --> check with teacher
+        # TODO --> Check with teacher
         h = 0
         goal_state = self._problem.goal_position
         h += abs(state.column_forklift - goal_state.column)
