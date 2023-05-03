@@ -27,42 +27,57 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
         # possivel otimizar(dá pontos)
 
-
-        for i in range(self.rows):
-            if constants.EXIT in self.matrix[i]:
-                for j in range(self.columns):
-                    # self.matrix[i][j] = matrix[i][j] //removed
-                    if self.matrix[i][j] == constants.EXIT:
-                        self.line_exit = i
-                        self.column_exit = j
+        if self.line_forklift is None or self.column_forklift is None:
+            for i in range(self.rows):
+                if constants.EXIT in self.matrix[i] or constants.FORKLIFT in self.matrix[i]:
+                    for j in range(self.columns):
+                        # self.matrix[i][j] = matrix[i][j] //removed
+                        if self.matrix[i][j] == constants.FORKLIFT:
+                            self.line_forklift = i
+                            self.column_forklift = j
+                        if self.matrix[i][j] == constants.EXIT:
+                            self.line_exit = i
+                            self.column_exit = j
+        else:
+            for i in range(self.rows):
+                if constants.EXIT in self.matrix[i]:
+                    for j in range(self.columns):
+                        # self.matrix[i][j] = matrix[i][j] //removed
+                        if self.matrix[i][j] == constants.EXIT:
+                            self.line_exit = i
+                            self.column_exit = j
 
     def can_move_up(self) -> bool:
-        return self.line_forklift == 0 or self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift != 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
 
     def can_move_right(self) -> bool:
-        return self.column_forklift == self.columns - 1 or self.matrix[self.line_forklift][self.column_forklift + 1] == constants.EMPTY
+        return self.column_forklift != self.columns - 1 and self.matrix[self.line_forklift][self.column_forklift + 1] == constants.EMPTY
 
     def can_move_down(self) -> bool:
-        return self.line_forklift == self.rows - 1 or self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift != self.rows - 1 and self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY
 
     def can_move_left(self) -> bool:
-        return self.column_forklift == 0 or self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
+        return self.column_forklift != 0 and self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
 
     def move_up(self) -> None:
-        if self.can_move_up():
-            self.line_forklift -= 1;
+        #print(f"UP({self.line_forklift},   {self.column_forklift}) --> ", end="")
+        self.line_forklift -= 1;
+        #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_right(self) -> None:
-        if self.can_move_right():
-            self.column_forklift += 1
+        #print(f"RIGHT({self.line_forklift},   {self.column_forklift}) --> ", end="")
+        self.column_forklift += 1
+        #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_down(self) -> None:
-        if self.can_move_down():
-            self.line_forklift += 1;
+        #print(f"DOWN({self.line_forklift},   {self.column_forklift}) --> ", end="")
+        self.line_forklift += 1;
+        #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_left(self) -> None:
-        if self.can_move_left():
-            self.column_forklift -= 1
+        #print(f"LEFT({self.line_forklift},   {self.column_forklift}) --> ", end="")
+        self.column_forklift -= 1
+        #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def get_cell_color(self, row: int, column: int) -> Color:
         if self.matrix[row][column] == constants.EXIT:

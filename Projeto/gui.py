@@ -621,14 +621,12 @@ class SearchSolver(threading.Thread):
     def run(self):
         # TODO calculate pairs distances #(calcular caminho(solução), custo e armazenar algures) (porque não guardar a solução e o custo na class par?)
         for pair in self.agent.pairs:
-            print("pair: ", pair)
-            problem = WarehouseProblemSearch(
+            '''problem = WarehouseProblemSearch(
                 WarehouseState(self.agent.initial_environment.matrix, self.agent.initial_environment.rows, self.agent.initial_environment.columns,
                                pair.cell1.line, pair.cell1.column),
-                pair.cell2)
-            print(type(problem))
-            solution = self.agent.search_method.search(problem) #TODO why is it returning None?
-            print(solution)
+                pair.cell2)'''
+            self.agent.solve_problem(WarehouseProblemSearch(self.agent.initial_environment, pair.cell2))
+            print(self.agent.solution)
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
