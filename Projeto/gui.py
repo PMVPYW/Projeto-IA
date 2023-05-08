@@ -626,7 +626,7 @@ class SearchSolver(threading.Thread):
                                pair.cell1.line, pair.cell1.column),
                 pair.cell2)'''
             self.agent.solve_problem(WarehouseProblemSearch(self.agent.initial_environment, pair.cell2))
-            print(self.agent.solution)
+            print(self.agent.solution, self.agent.heuristic)
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
