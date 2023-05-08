@@ -15,7 +15,6 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None):
         super().__init__()
-        # TODO //ver puzzle8
         # //question --> agent can be in exit cell?
 
         self.rows = rows
