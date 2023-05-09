@@ -625,6 +625,7 @@ class SearchSolver(threading.Thread):
                 WarehouseState(self.agent.initial_environment.matrix, self.agent.initial_environment.rows, self.agent.initial_environment.columns,
                                pair.cell1.line, pair.cell1.column),
                 pair.cell2)'''
+
             self.agent.solve_problem(WarehouseProblemSearch(self.agent.initial_environment, pair.cell2))
             print(self.agent.solution, self.agent.heuristic)
         self.agent.search_method.stopped=True
