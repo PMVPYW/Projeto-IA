@@ -13,7 +13,7 @@ from Projeto.warehouse.cell import Cell
 
 class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
-    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None):
+    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None): #TODO --> receber tb exit no construtor
         super().__init__()
         # //question --> agent can be in exit cell?
 
