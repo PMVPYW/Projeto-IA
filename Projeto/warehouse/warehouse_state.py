@@ -19,7 +19,7 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
         self.rows = rows
         self.columns = columns
-        self.matrix = np.copy(matrix)  # np.full([self.rows, self.columns], fill_value=0, dtype=int)
+        self.matrix = np.copy(matrix)  # np.full([self.rows, self.columns], fill_value=0, dtype=int) #TODO --> Transform array to int array
 
         self.line_forklift = forklift_line
         self.column_forklift = forklift_col

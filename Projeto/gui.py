@@ -268,7 +268,10 @@ class Window(tk.Tk):
         filename = fd.askopenfilename(initialdir='.')
         if filename:
             matrix, num_rows, num_columns = read_state_from_txt_file(filename)
-            self.initial_state = WarehouseState(matrix, num_rows, num_columns)
+            matrix = matrix.astype(int)
+            line_exit = column_exit = None
+            #TODO --> descobrir onde está o exit para consumo da gui
+            self.initial_state = WarehouseState(matrix, num_rows, num_columns)#TODO --> add here line_exit and column_exit
             self.agent_search = WarehouseAgentSearch(WarehouseState(matrix, num_rows, num_columns))
             self.solution = None
             self.text_problem.delete("1.0", "end")
