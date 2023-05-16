@@ -8,7 +8,6 @@ import constants
 from agentsearch.state import State
 from agentsearch.action import Action
 
-from Projeto.warehouse.cell import Cell
 
 
 class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
@@ -60,30 +59,30 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def move_up(self) -> None:
         #print(f"UP({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift -= 1;
-        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
         #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_right(self) -> None:
         #print(f"RIGHT({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift += 1
-        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
         #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_down(self) -> None:
         #print(f"DOWN({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift += 1;
-        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
         #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def move_left(self) -> None:
         #print(f"LEFT({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift -= 1
-        self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
+        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
         #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def get_cell_color(self, row: int, column: int) -> Color:
@@ -113,7 +112,7 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def __eq__(self, other):
         if isinstance(other, WarehouseState):
-            return np.array_equal(self.matrix, other.matrix)
+            return self.line_forklift == other.line_forklift and self.column_forklift == other.column_forklift
         return NotImplemented
 
     def __hash__(self):

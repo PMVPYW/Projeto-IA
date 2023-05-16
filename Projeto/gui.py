@@ -10,7 +10,7 @@ import queue
 import threading
 
 import constants
-from Projeto.warehouse.warehouse_problemforSearch import WarehouseProblemSearch
+
 from ga.genetic_operators.mutation2 import Mutation2
 from ga.genetic_operators.mutation3 import Mutation3
 from ga.genetic_operators.recombination3 import Recombination3
@@ -22,6 +22,7 @@ from ga.genetic_algorithm_thread import GeneticAlgorithmThread
 from warehouse.warehouse_agent_search import WarehouseAgentSearch, read_state_from_txt_file
 from warehouse.warehouse_experiments_factory import WarehouseExperimentsFactory
 from warehouse.warehouse_problemforGA import WarehouseProblemGA
+from warehouse.warehouse_problemforSearch import WarehouseProblemSearch
 from warehouse.warehouse_state import WarehouseState
 
 matplotlib.use("TkAgg")
@@ -623,13 +624,15 @@ class SearchSolver(threading.Thread):
 
     def run(self):
         # TODO calculate pairs distances #(calcular caminho(solução), custo e armazenar algures) (porque não guardar a solução e o custo na class par?)
+        state = copy.deepcopy(self.gui.initial_state)
         for pair in self.agent.pairs:
             '''problem = WarehouseProblemSearch(
                 WarehouseState(self.agent.initial_environment.matrix, self.agent.initial_environment.rows, self.agent.initial_environment.columns,
                                pair.cell1.line, pair.cell1.column),
                 pair.cell2)'''
-
-            self.agent.solve_problem(WarehouseProblemSearch(self.agent.initial_environment, pair.cell2))
+            state.column_forklift = pair.cell1.column
+            state.line_forklift = pair.cell1.line
+            self.agent.solve_problem(WarehouseProblemSearch(state, pair.cell2))
             print(self.agent.solution, self.agent.heuristic)
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)

@@ -1,5 +1,6 @@
 import copy
 
+import constants
 from agentsearch.problem import Problem
 from warehouse.actions import *
 from warehouse.cell import Cell
@@ -28,7 +29,9 @@ class WarehouseProblemSearch(Problem[WarehouseState]):
 
     def is_goal(self, state: WarehouseState) -> bool:
         # return self.goal_position == Cell(state.line_forklift, state.column_forklift)
-        fork_pos = Cell(state.line_forklift, state.column_forklift)
-        fork_target1 = Cell(self.goal_position.line, self.goal_position.column - 1)
-        fork_target2 = Cell(self.goal_position.line, self.goal_position.column + 1)
-        return self.goal_position == fork_target1 or self.goal_position == fork_target2
+        if self.initial_state.matrix[self.goal_position.line][self.goal_position.column - 1] == constants.EMPTY:
+            goal = -1
+        else:
+            goal = 1
+
+        return self.goal_position.line == state.line_forklift and self.goal_position.column + goal == state.column_forklift
