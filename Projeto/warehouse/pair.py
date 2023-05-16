@@ -2,8 +2,8 @@ class Pair:
     def __init__(self, cell1, cell2):
         self.cell1 = cell1
         self.cell2 = cell2
-        self.value = 0
-        self.path = None
+        self.cost = 0
+        self.solution = None
         # TODO? --> guardar caminho e custo, verificar se coordenada é agente ou pick (picks guardados no agente(pick == agente))
 
     def hash(self):
@@ -11,5 +11,5 @@ class Pair:
             self.cell2.line) + "_" + str(self.cell2.column)
 
     def __str__(self):
-        return str(self.cell1.line) + "-" + str(self.cell1.column) + " / " + str(self.cell2.line) + "-" + str(self.cell2.column) + ": " + str(self.value) + "\n"
+        return str(self.cell1.line) + "-" + str(self.cell1.column) + " / " + str(self.cell2.line) + "-" + str(self.cell2.column) + ": " + str(self.cost) + "\n"
 

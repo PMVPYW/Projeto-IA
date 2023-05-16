@@ -633,7 +633,9 @@ class SearchSolver(threading.Thread):
             state.column_forklift = pair.cell1.column
             state.line_forklift = pair.cell1.line
             self.agent.solve_problem(WarehouseProblemSearch(state, pair.cell2))
-            print(self.agent.solution, self.agent.heuristic)
+            pair.solution = self.agent.solution
+            pair.cost = self.agent.solution.cost
+            print(self.agent.solution, self.agent.solution.cost)
         self.agent.search_method.stopped=True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,

@@ -16,3 +16,9 @@ class Solution:
     @property
     def cost(self) -> int:
         return self.problem.compute_path_cost(self.actions)
+
+    def __str__(self):
+        str = ""
+        for x in self.actions:
+            str+=f" {x} "
+        return str
