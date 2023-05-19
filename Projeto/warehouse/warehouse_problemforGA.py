@@ -1,3 +1,5 @@
+import random
+
 from ga.problem import Problem
 from warehouse.warehouse_agent_search import WarehouseAgentSearch
 from warehouse.warehouse_individual import WarehouseIndividual
@@ -11,8 +13,11 @@ class WarehouseProblemGA(Problem):
         self.agent_search = agent_search
 
     def generate_individual(self) -> "WarehouseIndividual":
-        new_individual = WarehouseIndividual(self, len(self.products))
-        # TODO --> genome = wich forklift corresponds to a pair
+        new_individual = WarehouseIndividual(self, len(self.agent_search.pairs))
+        new_individual.genome = []
+        for i in range(new_individual.num_genes):
+            new_individual.genome.append(self.forklifts[random.randint(0, len(self.forklifts))]) #TODO --> Check with teacher
+        #genome = wich forklift corresponds to a pair
         '''
         genome size = len(pairs)
         each position as a forklift
