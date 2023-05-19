@@ -12,7 +12,11 @@ class WarehouseProblemGA(Problem):
 
     def generate_individual(self) -> "WarehouseIndividual":
         new_individual = WarehouseIndividual(self, len(self.products))
-        #TODO --> new_individual.initialise()?
+        # TODO --> genome = wich forklift corresponds to a pair
+        '''
+        genome size = len(pairs)
+        each position as a forklift
+        '''
         return new_individual
 
     def __str__(self):
