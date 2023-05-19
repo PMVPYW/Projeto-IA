@@ -642,6 +642,8 @@ class SearchSolver(threading.Thread):
                                 open_experiments=tk.NORMAL, run_experiments=tk.DISABLED, stop_experiments=tk.DISABLED,
                                 simulation=tk.DISABLED, stop_simulation=tk.DISABLED)
         self.gui.frame.event_generate('<<AgentStopped>>', when='tail')
+        self.gui.text_problem.delete("1.0", "end")
+        self.gui.text_problem.insert(tk.END, "Search Complete!")
 
 
 class SolutionRunner(threading.Thread):
