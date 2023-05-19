@@ -29,4 +29,7 @@ class WarehouseProblemGA(Problem):
         string += f'{len(self.forklifts)}'
         string = "# of products: "
         string += f'{len(self.products)}'
+        string += f'Items\nPath\tCost'
+        for x in self.agent_search.pairs:
+            string += f'{x}\n'
         return string
