@@ -26,10 +26,10 @@ class WarehouseProblemGA(Problem):
 
     def __str__(self):
         string = "# of forklifts: "
-        string += f'{len(self.forklifts)}'
-        string = "# of products: "
-        string += f'{len(self.products)}'
-        string += f'Items\nPath\tCost'
+        string += f'{len(self.forklifts)}\n'
+        string += "# of products: "
+        string += f'{len(self.products)}\n'
+        string += f'Items\nPath\tCost\n'
         for x in self.agent_search.pairs:
             string += f'{x}\n'
         return string

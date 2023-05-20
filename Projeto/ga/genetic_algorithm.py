@@ -62,9 +62,11 @@ class GeneticAlgorithm:
         self.listeners.append(listener)
 
     def fire_generation_ended(self) -> None:
+        print("ge", self.generation,'/', self.max_generations)
         for listener in self.listeners:
             listener.generation_ended(GAEvent(copy.deepcopy(self.best_in_run), self.population.average_fitness))
 
     def fire_run_ended(self) -> None:
         for listener in self.listeners:
             listener.run_ended(GAEvent(copy.deepcopy(self.best_in_run), self.population.average_fitness, True))
+            print("###########################END")

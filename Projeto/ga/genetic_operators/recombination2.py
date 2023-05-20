@@ -1,5 +1,6 @@
 from random import random
 
+from ga.genetic_algorithm import GeneticAlgorithm
 from ga.individual import Individual
 from ga.genetic_operators.recombination import Recombination
 
@@ -8,17 +9,14 @@ class Recombination2(Recombination):
     def __init__(self, probability: float):
         super().__init__(probability)
 
-    def recombine(self, ind1: Individual, ind2: Individual) -> None:
-        if random.random() < self.probability:
-            length = min(len(ind1.genotype), len(ind2.genotype))
-            if length < 2:
-                return
+    def recombine(self, ind1: Individual, ind2: Individual) -> None: #2 cuts recombination
+        cut1 = GeneticAlgorithm.rand.randint(0, ind1.num_genes)
+        cut2 = GeneticAlgorithm.rand.randint(0, ind1.num_genes)
+        if cut1 > cut2:
+            cut1, cut2 = cut2, cut1
 
-            # Choose two random crossover points
-            pt1, pt2 = sorted(random.sample(range(length), 2))
-
-            # Swap the genetic material between the two points
-            ind1.genotype[pt1:pt2], ind2.genotype[pt1:pt2] = ind2.genotype[pt1:pt2], ind1.genotype[pt1:pt2]
+        for i in range(cut1, cut2):
+            ind1.genome[i], ind2.genome[i] = ind2.genome[i], ind1.genome[i]
 
     def __str__(self):
         return "Recombination 2 (" + f'{self.probability}' + ")"
