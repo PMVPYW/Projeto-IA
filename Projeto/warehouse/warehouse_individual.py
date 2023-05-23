@@ -1,6 +1,8 @@
 import copy
 
 from ga.individual_int_vector import IntVectorIndividual
+from warehouse.cell import Cell
+from warehouse.pair import Pair
 
 
 class WarehouseIndividual(IntVectorIndividual):
@@ -9,31 +11,39 @@ class WarehouseIndividual(IntVectorIndividual):
         super().__init__(problem, num_genes)
         self.fitness = None
 
-
     def compute_fitness(self) -> float:
-        # TODO - Check with teacher
-        '''
-        idea --> get sum of all path costs, and find the difference betwen that and the current path
-        if 2 forklifts are to the same pick, there is a penalization that is half of the 2º path costs
-        '''
+        # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
+
+        last_pos = self.problem.forklifts[0]
         self.fitness = 0
-        max = 0
-        atributed_picks = []
-        for i in range(self.num_genes):
-            if self.genome[i]:
-                self.fitness += self.problem.agent_search.pairs[i].cost
-                if (self.problem.agent_search.pairs[i].cell2 in atributed_picks):
-                    self.fitness -= self.problem.agent_search.pairs[i].cost
-                else:
-                    atributed_picks.append(self.problem.agent_search.pairs[i].cell2)
-            max += self.problem.agent_search.pairs[i].cost
-        self.fitness = max - self.fitness
+        for i in self.genome:
+            b_pair = self.best_pair(i, last_pos)
+            last_pos = b_pair.cell2
+            self.fitness += b_pair.cost
         return self.fitness
 
+    def best_pair(self, pick: int, lastPos: Cell) -> Pair:
+        b_p = None
+        pk = self.problem.products[pick-1]
+        for x in self.problem.agent_search.pairs:
+            if x.cell2.line == pk.line and x.cell2.column == pk.column\
+                    and x.cell1.line == lastPos.line and x.cell1.column == lastPos.column:
+                b_p = x
+                break
+        return b_p
 
     def obtain_all_path(self):
-        # TODO
-        pass
+        # TODO --> check
+        path = []
+        for i in range(self.num_genes):
+            if self.genome[i]:
+                path.append(self.problem.agent_search.pairs[i].solution.get_path())
+        for x in path:
+            print("p", end="")
+            for i in x:
+                print(i, end=" ")
+            print("\n")
+        return path, 3
 
     def __str__(self):
         string = 'Fitness: ' + f'{self.fitness}' + '\n'

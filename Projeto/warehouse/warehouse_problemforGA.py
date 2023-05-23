@@ -14,9 +14,13 @@ class WarehouseProblemGA(Problem):
         self.agent_search = agent_search
 
     def generate_individual(self) -> "WarehouseIndividual":
-        new_individual = WarehouseIndividual(self, len(self.agent_search.pairs))
+        repeated = []
+        new_individual = WarehouseIndividual(self, len(self.agent_search.products))
         for i in range(new_individual.num_genes):
-            new_individual.genome[i] = True if GeneticAlgorithm.rand.random() < 0.4 else False  # TODO --> Check with teacher. change 0.4 to var
+            n = GeneticAlgorithm.rand.randint(1, new_individual.num_genes)
+            while n in repeated:
+                n = GeneticAlgorithm.rand.randint(1, new_individual.num_genes)
+            new_individual.genome[i] = n
         # genome = wich forklift corresponds to a pair
         '''
         genome size = len(pairs)

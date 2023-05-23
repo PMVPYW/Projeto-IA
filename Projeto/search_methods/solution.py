@@ -1,5 +1,6 @@
 from agentsearch.problem import Problem
 from search_methods.node import Node
+from warehouse.cell import Cell
 
 
 class Solution:
@@ -16,6 +17,14 @@ class Solution:
     @property
     def cost(self) -> int:
         return self.problem.compute_path_cost(self.actions)
+
+    def get_path(self):
+        path = []
+        for a in self.actions:
+            print(a)
+            s = self.problem.get_successor(self.problem.initial_state, a)
+            path.append(Cell(s.line_forklift, s.column_forklift))
+        return path
 
     def __str__(self):
         str = ""
