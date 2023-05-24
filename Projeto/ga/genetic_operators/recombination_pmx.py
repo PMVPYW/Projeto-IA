@@ -31,7 +31,7 @@ class RecombinationPMX(Recombination):
                 print(gene, mapping1)
                 while gene in mapping1: #TODO --> getting stuck here
                     gene = mapping1[gene]
-                child1[i] = gene
+
 
         # Create the second child by copying the selected segment from ind2
         # and filling in the remaining genes from ind1

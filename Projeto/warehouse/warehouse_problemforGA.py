@@ -11,21 +11,19 @@ class WarehouseProblemGA(Problem):
         # TODO --> check
         self.forklifts = agent_search.forklifts
         self.products = agent_search.products
+        self.exit = agent_search.exit
         self.agent_search = agent_search
 
     def generate_individual(self) -> "WarehouseIndividual":
         repeated = []
-        new_individual = WarehouseIndividual(self, len(self.agent_search.products))
-        for i in range(new_individual.num_genes):
-            n = GeneticAlgorithm.rand.randint(1, new_individual.num_genes)
-            while n in repeated:
-                n = GeneticAlgorithm.rand.randint(1, new_individual.num_genes)
-            new_individual.genome[i] = n
-        # genome = wich forklift corresponds to a pair
-        '''
-        genome size = len(pairs)
-        each position as a pair
-        '''
+        new_individual = WarehouseIndividual(self, len(self.agent_search.products * len(self.forklifts)))
+        for i in range(len(self.products)):
+            pos = GeneticAlgorithm.rand.randint(0, new_individual.num_genes - 1)
+            while pos in repeated:
+                pos = GeneticAlgorithm.rand.randint(0, new_individual.num_genes - 1)
+            new_individual.genome[pos] = i + 1
+            repeated.append(pos)
+
         return new_individual
 
     def __str__(self):
