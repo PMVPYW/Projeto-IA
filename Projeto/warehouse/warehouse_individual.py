@@ -1,5 +1,7 @@
 import copy
 
+import numpy as np
+
 from ga.individual_int_vector import IntVectorIndividual
 from warehouse.cell import Cell
 from warehouse.pair import Pair
@@ -11,22 +13,53 @@ class WarehouseIndividual(IntVectorIndividual):
         super().__init__(problem, num_genes)
         self.fitness = None
 
+    def get_max_value(self):
+        m = 0
+        for x in self.problem.agent_search.pairs:
+            m += x.cost
+        return m
+
     def compute_fitness(self) -> float:
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
-
+        m_v = self.get_max_value()
         last_pos = self.problem.forklifts[0]
         self.fitness = 0
         for i in self.genome:
             b_pair = self.best_pair(i, last_pos)
-            last_pos = b_pair.cell2
-            self.fitness += b_pair.cost
+            if b_pair is None:
+                self.fitness += m_v
+            else:
+                last_pos = b_pair.cell2
+                self.fitness += b_pair.cost
+
+
+        # penalization for missing numbers
+        missing = 1  # starts 1 because it will be the exp. of missing
+        for i in range(1, len(self.problem.products)):
+            if not np.isin(i, self.genome):
+                print(f"###{i}")
+                self.fitness += m_v
+
+        # add cost to exit
+        exit_path = self.obter_saida(last_pos)
+        if exit_path != None:
+            self.fitness += exit_path.cost
+        else:
+            self.fitness *= 1.5
+
         return self.fitness
+
+    def obter_saida(self, last_pos: Cell):
+        exit = self.problem.exit
+        for x in self.problem.agent_search.pairs:
+            if x.cell2.line == exit.line and x.cell2.column == exit.column and x.cell1.line == last_pos.line and x.cell1.column == last_pos.column:
+                return x
 
     def best_pair(self, pick: int, lastPos: Cell) -> Pair:
         b_p = None
-        pk = self.problem.products[pick-1]
+        pk = self.problem.products[pick - 1]
         for x in self.problem.agent_search.pairs:
-            if x.cell2.line == pk.line and x.cell2.column == pk.column\
+            if x.cell2.line == pk.line and x.cell2.column == pk.column \
                     and x.cell1.line == lastPos.line and x.cell1.column == lastPos.column:
                 b_p = x
                 break
