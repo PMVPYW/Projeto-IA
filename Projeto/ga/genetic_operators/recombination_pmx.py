@@ -28,7 +28,6 @@ class RecombinationPMX(Recombination):
         for i in range(len(ind1.genome)):
             if child1[i] == -1:
                 gene = ind2.genome[i]
-                print(gene, mapping1)
                 while gene in mapping1: #TODO --> getting stuck here
                     gene = mapping1[gene]
                 child1[i] = gene
@@ -44,11 +43,9 @@ class RecombinationPMX(Recombination):
                 while gene in mapping2:
                     gene = mapping2[gene]
                 child2[i] = gene
-        print("2º child")
 
         ind1.genome = child2
         ind2.genome = child1
-        print("end")
 
     def __str__(self):
         return "PMX recombination (" + f'{self.probability}' + ")"

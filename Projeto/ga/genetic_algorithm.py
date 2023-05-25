@@ -41,7 +41,7 @@ class GeneticAlgorithm:
         self.population.evaluate()
         self.best_in_run = self.population.best_individual
         self.fire_generation_ended()
-
+        import time
         while self.generation < self.max_generations and not self.stopped:
             self.population = self.selection_method.run(self.population)
             self.recombination_method.run(self.population)

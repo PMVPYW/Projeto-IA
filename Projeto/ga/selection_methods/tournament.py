@@ -14,7 +14,8 @@ class Tournament(SelectionMethod):
     def run(self, population: Population) -> Population:
         new_population = Population(population.size)
         for i in range(population.size):
-            new_population.individuals.append(self.tournament(population))
+            new_population.individuals.append(self.tournament(population)) #TODO --> check why is getting slower
+
         return new_population
 
     def tournament(self, population: Population) -> Individual:

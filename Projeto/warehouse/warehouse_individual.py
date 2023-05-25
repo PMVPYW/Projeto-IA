@@ -11,59 +11,28 @@ class WarehouseIndividual(IntVectorIndividual):
 
     def __init__(self, problem: "WarehouseProblem", num_genes: int):
         super().__init__(problem, num_genes)
-        self.fitness = None
 
-    def get_max_value(self):
-        m = 0
-        for x in self.problem.agent_search.pairs:
-            m += x.cost
-        return m
 
     def compute_fitness(self) -> float:
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
-        m_v = self.get_max_value()
+        fitness = 0
         last_pos = self.problem.forklifts[0]
-        self.fitness = 0
-        for i in self.genome:
-            b_pair = self.best_pair(i, last_pos)
-            if b_pair is None:
-                self.fitness += m_v
-            else:
-                last_pos = b_pair.cell2
-                self.fitness += b_pair.cost
+        for i in range(len(self.genome)):
+            end_point = self.problem.products[self.genome[i] - 1]
+            fitness += self.get_pair_value(last_pos, end_point)
+            last_pos = self.problem.products[self.genome[i] - 1]
+        #saida
+        last_pos = self.problem.products[self.genome[-1] - 1]
+        end_point = self.problem.exit
+        fitness += self.get_pair_value(last_pos, end_point)
+        self.fitness = fitness
+        return fitness
 
 
-        # penalization for missing numbers
-        missing = 1  # starts 1 because it will be the exp. of missing
-        for i in range(1, len(self.problem.products)):
-            if not np.isin(i, self.genome):
-                print(f"###{i}")
-                self.fitness += m_v
-
-        # add cost to exit
-        exit_path = self.obter_saida(last_pos)
-        if exit_path != None:
-            self.fitness += exit_path.cost
-        else:
-            self.fitness *= 1.5
-
-        return self.fitness
-
-    def obter_saida(self, last_pos: Cell):
-        exit = self.problem.exit
+    def get_pair_value(self, start: Cell, end: Cell):
         for x in self.problem.agent_search.pairs:
-            if x.cell2.line == exit.line and x.cell2.column == exit.column and x.cell1.line == last_pos.line and x.cell1.column == last_pos.column:
-                return x
-
-    def best_pair(self, pick: int, lastPos: Cell) -> Pair:
-        b_p = None
-        pk = self.problem.products[pick - 1]
-        for x in self.problem.agent_search.pairs:
-            if x.cell2.line == pk.line and x.cell2.column == pk.column \
-                    and x.cell1.line == lastPos.line and x.cell1.column == lastPos.column:
-                b_p = x
-                break
-        return b_p
+            if (x.cell1 == start and x.cell2 == end) or (x.cell2 == start and x.cell1 == end): #TODO --> check if i can go back (in the path[second if])
+                return x.cost
 
     def obtain_all_path(self):
         # TODO --> check
