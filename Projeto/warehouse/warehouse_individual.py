@@ -38,15 +38,10 @@ class WarehouseIndividual(IntVectorIndividual):
     def obtain_all_path(self):
         # TODO --> check
         path = []
-        for i in range(self.num_genes):
-            if self.genome[i]:
-                path.append(self.problem.agent_search.pairs[i].solution.get_path())
-        for x in path:
-            print("p", end="")
-            for i in x:
-                print(i, end=" ")
-            print("\n")
-        return path, 3
+        for pair in self.problem.agent_search.pairs:
+            for action in pair.solution.actions:
+                print(action)
+                path.append(pair.solution.problem)
 
     def __str__(self):
         string = 'Fitness: ' + f'{self.fitness}' + '\n'
