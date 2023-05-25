@@ -35,13 +35,30 @@ class WarehouseIndividual(IntVectorIndividual):
             if (x.cell1 == start and x.cell2 == end) or (x.cell2 == start and x.cell1 == end): #TODO --> check if i can go back (in the path[second if])
                 return x.cost
 
+    def get_pair_path(self, start: Cell, end: Cell):
+        for x in self.problem.agent_search.pairs:
+            if (x.cell1 == start and x.cell2 == end):
+                return x.get_path()
+            elif (x.cell2 == start and x.cell1 == end):
+                return x.get_path()[::-1]
     def obtain_all_path(self):
         # TODO --> check
         path = []
-        for pair in self.problem.agent_search.pairs:
-            for action in pair.solution.actions:
-                print(action)
-                path.append(pair.solution.problem)
+        partial_path = []
+        products = self.problem.products
+        last_pos = self.problem.forklifts[0]
+        for i in range(len(self.genome)):
+            end_point = products[self.genome[i] - 1]
+            partial_path += self.get_pair_path(last_pos, end_point)
+            last_pos = products[self.genome[i] - 1]
+        # saida
+        last_pos = products[self.genome[-1] - 1]
+        end_point = self.problem.exit
+        partial_path += self.get_pair_path(last_pos, end_point)
+        path.append(partial_path)
+        steps = len(partial_path)
+        print(path, steps)
+        return path, steps
 
     def __str__(self):
         string = 'Fitness: ' + f'{self.fitness}' + '\n'

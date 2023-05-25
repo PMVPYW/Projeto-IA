@@ -46,16 +46,16 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
                             self.column_exit = j
 
     def can_move_up(self) -> bool:
-        return self.line_forklift != 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift > 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
 
     def can_move_right(self) -> bool:
-        return self.column_forklift != self.columns - 1 and self.matrix[self.line_forklift][self.column_forklift + 1] == constants.EMPTY
+        return self.column_forklift < self.columns - 1 and self.matrix[self.line_forklift][self.column_forklift + 1] == constants.EMPTY
 
     def can_move_down(self) -> bool:
-        return self.line_forklift != self.rows - 1 and self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift < self.rows - 1 and self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY
 
     def can_move_left(self) -> bool:
-        return self.column_forklift != 0 and self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
+        return self.column_forklift > 0 and self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
 
     def move_up(self) -> None:
         #print(f"UP({self.line_forklift},   {self.column_forklift}) --> ", end="")

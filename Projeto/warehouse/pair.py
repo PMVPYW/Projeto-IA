@@ -15,6 +15,8 @@ class Pair:
         if self.solution is None:
             return None
         problem = copy.deepcopy(self.solution.problem)
+        problem.initial_state.line_forklift = self.cell1.line
+        problem.initial_state.column_forklift = self.cell1.column
         path = []
         for action in self.solution.actions:
             problem.initial_state = problem.get_successor(problem.initial_state, action)
