@@ -14,15 +14,16 @@ class WarehouseIndividual(IntVectorIndividual):
 
 
     def compute_fitness(self) -> float:
+        products = self.problem.products
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
         fitness = 0
         last_pos = self.problem.forklifts[0]
         for i in range(len(self.genome)):
-            end_point = self.problem.products[self.genome[i] - 1]
+            end_point = products[self.genome[i] - 1]
             fitness += self.get_pair_value(last_pos, end_point)
-            last_pos = self.problem.products[self.genome[i] - 1]
+            last_pos = products[self.genome[i] - 1]
         #saida
-        last_pos = self.problem.products[self.genome[-1] - 1]
+        last_pos = products[self.genome[-1] - 1]
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
         self.fitness = fitness
@@ -59,8 +60,8 @@ class WarehouseIndividual(IntVectorIndividual):
     # __deepcopy__ is implemented here so that all individuals share the same problem instance
     def __deepcopy__(self, memo):
         new_instance = self.__class__(self.problem, self.num_genes)
-        new_instance.genome = copy.deepcopy(self.genome)
+        new_instance.genome = copy.copy(self.genome) #TODO --> check if deepcopy (becomes slower)
         new_instance.fitness = self.fitness
         # TODO
-        new_instance.problem = copy.deepcopy(self.problem)
+        #new_instance.problem = copy.deepcopy(self.problem)
         return new_instance

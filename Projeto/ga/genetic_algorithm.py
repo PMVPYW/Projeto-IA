@@ -41,7 +41,6 @@ class GeneticAlgorithm:
         self.population.evaluate()
         self.best_in_run = self.population.best_individual
         self.fire_generation_ended()
-        import time
         while self.generation < self.max_generations and not self.stopped:
             self.population = self.selection_method.run(self.population)
             self.recombination_method.run(self.population)
@@ -62,11 +61,9 @@ class GeneticAlgorithm:
         self.listeners.append(listener)
 
     def fire_generation_ended(self) -> None:
-        print("ge", self.generation,'/', self.max_generations)
         for listener in self.listeners:
             listener.generation_ended(GAEvent(copy.deepcopy(self.best_in_run), self.population.average_fitness))
 
     def fire_run_ended(self) -> None:
         for listener in self.listeners:
             listener.run_ended(GAEvent(copy.deepcopy(self.best_in_run), self.population.average_fitness, True))
-            print("###########################END")
