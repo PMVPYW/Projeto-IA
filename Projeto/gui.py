@@ -683,6 +683,10 @@ class SolutionRunner(threading.Thread):
                     self.state.matrix[old_cell[j].line][old_cell[j].column] = constants.FORKLIFT
 
                 # TODO put the catched products in black
+                if self.state.matrix[new_cell.line][new_cell.column - 1] == constants.PRODUCT:
+                    self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
+                elif self.state.matrix[new_cell.line][new_cell.column + 1] == constants.PRODUCT:
+                    self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
             self.gui.queue.put((copy.deepcopy(self.state), step, False))
         self.gui.queue.put((None, steps, True))  # Done
 
