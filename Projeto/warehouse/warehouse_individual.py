@@ -17,8 +17,19 @@ class WarehouseIndividual(IntVectorIndividual):
         products = self.problem.products
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
         fitness = 0
-        last_pos = self.problem.forklifts[0]
+        forklift_index = 0
+        max_forklift_index = len(self.problem.forklifts)
+        last_pos = self.problem.forklifts[forklift_index]
         for i in range(len(self.genome)):
+            if self.genome[i] < 1:
+                end_point = self.problem.exit
+                fitness += self.get_pair_value(last_pos, end_point)
+                forklift_index += 1
+                if not forklift_index < max_forklift_index:
+                    self.fitness = fitness
+                    return fitness
+                last_pos = self.problem.forklifts[forklift_index]
+                continue
             end_point = products[self.genome[i] - 1]
             fitness += self.get_pair_value(last_pos, end_point)
             last_pos = products[self.genome[i] - 1]

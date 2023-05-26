@@ -28,6 +28,7 @@ class RecombinationPMX(Recombination):
         for i in range(len(ind1.genome)):
             if child1[i] == -1:
                 gene = ind2.genome[i]
+                print(mapping1, ind1.genome, ind2.genome, child1)
                 while gene in mapping1: #TODO --> getting stuck here
                     gene = mapping1[gene]
                 child1[i] = gene
