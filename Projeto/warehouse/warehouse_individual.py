@@ -56,9 +56,20 @@ class WarehouseIndividual(IntVectorIndividual):
         # TODO --> check
         path = []
         partial_path = []
+        forklift_index = 0
+        max_forklift_index = len(self.problem.forklifts)
         products = self.problem.products
-        last_pos = self.problem.forklifts[0]
+        last_pos = self.problem.forklifts[forklift_index]
         for i in range(len(self.genome)):
+            if self.genome[i] < 1 :
+                end_point = self.problem.exit
+                partial_path += self.get_pair_path(last_pos, end_point)
+                path.append(partial_path)
+                partial_path = []
+                forklift_index += 1
+                if not forklift_index < max_forklift_index:
+                    continue
+                last_pos = self.problem.forklifts[forklift_index]
             end_point = products[self.genome[i] - 1]
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[self.genome[i] - 1]

@@ -42,15 +42,10 @@ class GeneticAlgorithm:
         self.best_in_run = self.population.best_individual
         self.fire_generation_ended()
         while self.generation < self.max_generations and not self.stopped:
-            print("begin")
             self.population = self.selection_method.run(self.population)
-            print("pop")
             self.recombination_method.run(self.population)
-            print("recomb")
             self.mutation_method.run(self.population)
-            print("mut")
             self.population.evaluate()
-            print("eval")
             if self.population.best_individual.better_than(self.best_in_run):
                 self.best_in_run = copy.deepcopy(self.population.best_individual)
             self.generation += 1
