@@ -15,7 +15,7 @@ class WarehouseProblemGA(Problem):
         self.exit = agent_search.exit
 
     def generate_individual(self) -> "WarehouseIndividual":
-        return WarehouseIndividual(self, len(self.products))
+        return WarehouseIndividual(self, len(self.products) + len(self.forklifts))
 
     def __str__(self):
         string = "# of forklifts: "
