@@ -86,6 +86,7 @@ class WarehouseIndividual(IntVectorIndividual):
                 last_pos = self.problem.forklifts[forklift_index]
                 steps = max(steps, len(partial_path))
                 partial_path = [last_pos]
+                continue
 
             end_point = products[self.genome[i] - 1]
             partial_path += self.get_pair_path(last_pos, end_point)
