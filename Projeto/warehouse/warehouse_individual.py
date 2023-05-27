@@ -68,31 +68,30 @@ class WarehouseIndividual(IntVectorIndividual):
     def obtain_all_path(self):
         # TODO --> check
         path = []
-        partial_path = []
+        steps = 0
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
         products = self.problem.products
         last_pos = self.problem.forklifts[forklift_index]
+        partial_path = [last_pos]
         for i in range(len(self.genome)):
             if self.genome[i] < 1 :
                 end_point = self.problem.exit
                 partial_path += self.get_pair_path(last_pos, end_point)
-                path.append(partial_path)
-                partial_path = []
+                partial_path.append(end_point)
                 forklift_index += 1
                 if not forklift_index < max_forklift_index:
-                    continue
+                    break
+                path.append(partial_path)
                 last_pos = self.problem.forklifts[forklift_index]
+                steps = max(steps, len(partial_path))
+                partial_path = [last_pos]
+
             end_point = products[self.genome[i] - 1]
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[self.genome[i] - 1]
-        # saida
-        last_pos = products[self.genome[-1] - 1]
-        end_point = self.problem.exit
-        partial_path += self.get_pair_path(last_pos, end_point)
         path.append(partial_path)
-        steps = len(partial_path)
-        print(path, steps)
+        steps = max(steps, len(partial_path))
         return path, steps
 
     def __str__(self):

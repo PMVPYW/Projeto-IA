@@ -687,6 +687,8 @@ class SolutionRunner(threading.Thread):
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
                 elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][new_cell.column + 1] == constants.PRODUCT:
                     self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
+                #reput the exit at blue
+                self.state.matrix[self.state.line_exit][self.state.column_exit] = constants.EXIT
             self.gui.queue.put((copy.deepcopy(self.state), step, False))
         self.gui.queue.put((None, steps, True))  # Done
 
