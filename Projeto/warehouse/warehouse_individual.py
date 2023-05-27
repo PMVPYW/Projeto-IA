@@ -14,8 +14,11 @@ class WarehouseIndividual(IntVectorIndividual):
 
 
     def compute_fitness(self) -> float:
+        not_reached = [x for x in range(1, len(self.problem.products)+1)]
         products = self.problem.products
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
+        if (self.genome[2] == -2):
+            a = 0
         fitness = 0
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
@@ -26,6 +29,9 @@ class WarehouseIndividual(IntVectorIndividual):
                 fitness += self.get_pair_value(last_pos, end_point)
                 forklift_index += 1
                 if not forklift_index < max_forklift_index:
+                    # penalizar por não ir a pontos
+                    missing = len(not_reached) + 1
+                    fitness **= missing
                     self.fitness = fitness
                     return fitness
                 last_pos = self.problem.forklifts[forklift_index]
@@ -33,12 +39,19 @@ class WarehouseIndividual(IntVectorIndividual):
             end_point = products[self.genome[i] - 1]
             fitness += self.get_pair_value(last_pos, end_point)
             last_pos = products[self.genome[i] - 1]
+            not_reached.remove(self.genome[i])
         #saida
         last_pos = products[self.genome[-1] - 1]
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
+
+        #penalizar por não ir a pontos
+        missing =  len(not_reached) + 1
+        fitness **= missing
+
         self.fitness = fitness
         return fitness
+
 
 
     def get_pair_value(self, start: Cell, end: Cell):
