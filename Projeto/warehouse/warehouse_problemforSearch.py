@@ -34,4 +34,9 @@ class WarehouseProblemSearch(Problem[WarehouseState]):
         else:
             goal = 1
 
+        if self.goal_position.line == self.initial_state.line_exit and self.goal_position.column == self.initial_state.column_exit: #se goal for saida também pode entrar por cima e por baixo
+            if self.goal_position.line - 1 == state.line_forklift and self.goal_position.column == state.column_forklift:
+                return True
+            elif self.goal_position.line + 1 == state.line_forklift and self.goal_position.column == state.column_forklift:
+                return True
         return self.goal_position.line == state.line_forklift and self.goal_position.column + goal == state.column_forklift

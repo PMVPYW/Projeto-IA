@@ -12,7 +12,7 @@ from agentsearch.action import Action
 
 class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
-    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None): #TODO --> receber tb exit no construtor
+    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None, exit_line: int = None, exit_col: int= None): #TODO --> receber tb exit no construtor
         super().__init__()
         # //question --> agent can be in exit cell?
 
@@ -22,10 +22,12 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
         self.line_forklift = forklift_line
         self.column_forklift = forklift_col
+        self.line_exit = exit_line
+        self.column_exit = exit_col
 
         # possivel otimizar(dá pontos)
 
-        if self.line_forklift is None or self.column_forklift is None:
+        if self.line_forklift is None or self.column_forklift is None or exit_line is None or exit_col is None:
             for i in range(self.rows):
                 if constants.EXIT in self.matrix[i] or constants.FORKLIFT in self.matrix[i]:
                     for j in range(self.columns):
@@ -33,14 +35,6 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
                         if self.matrix[i][j] == constants.FORKLIFT:
                             self.line_forklift = i
                             self.column_forklift = j
-                        if self.matrix[i][j] == constants.EXIT:
-                            self.line_exit = i
-                            self.column_exit = j
-        else:
-            for i in range(self.rows):
-                if constants.EXIT in self.matrix[i]:
-                    for j in range(self.columns):
-                        # self.matrix[i][j] = matrix[i][j] //removed
                         if self.matrix[i][j] == constants.EXIT:
                             self.line_exit = i
                             self.column_exit = j
