@@ -3,40 +3,39 @@ import copy
 from ga.individual_int_vector import IntVectorIndividual
 from warehouse.cell import Cell
 
+
 class WarehouseIndividual(IntVectorIndividual):
 
     def __init__(self, problem: "WarehouseProblem", num_genes: int):
         super().__init__(problem, num_genes)
 
     def compute_fitness(self) -> float:
-        not_reached = set(range(1, len(self.problem.products) + 1))
+
         products = self.problem.products
         num_prods = len(products)
         fitness = 0
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
+        forklift_costs = [0 for x in range(max_forklift_index)]
         last_pos = self.problem.forklifts[forklift_index]
         for gene in self.genome:
             if gene > num_prods:
                 end_point = self.problem.exit
                 fitness += self.get_pair_value(last_pos, end_point)
+                forklift_costs[forklift_index] = fitness
+                fitness = 0
                 forklift_index += 1
-                if not forklift_index < max_forklift_index:
-                    missing = len(not_reached) + 1
-                    fitness **= missing
-                    self.fitness = fitness
-                    return fitness
                 last_pos = self.problem.forklifts[forklift_index]
                 continue
             end_point = products[gene - 1]
             fitness += self.get_pair_value(last_pos, end_point)
             last_pos = products[gene - 1]
-            not_reached.discard(gene)
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
-        missing = len(not_reached) + 1
-        fitness **= missing
+        forklift_costs[forklift_index] = fitness
+        fitness = sum(forklift_costs) * max(forklift_costs)
         self.fitness = fitness
+        print(forklift_costs)
         return fitness
 
     def get_pair_value(self, start: Cell, end: Cell):
