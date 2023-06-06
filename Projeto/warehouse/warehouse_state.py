@@ -26,18 +26,23 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
         self.column_exit = exit_col
 
         # possivel otimizar(dá pontos)
-
-        if self.line_forklift is None or self.column_forklift is None or exit_line is None or exit_col is None:
-            for i in range(self.rows):
-                if constants.EXIT in self.matrix[i] or constants.FORKLIFT in self.matrix[i]:
-                    for j in range(self.columns):
-                        # self.matrix[i][j] = matrix[i][j] //removed
-                        if self.matrix[i][j] == constants.FORKLIFT:
-                            self.line_forklift = i
-                            self.column_forklift = j
-                        if self.matrix[i][j] == constants.EXIT:
-                            self.line_exit = i
-                            self.column_exit = j
+        if self.line_forklift is not None and self.column_forklift is not None and exit_line is not None and exit_col is not None:
+            return  # Skip the loop if variables are already assigned
+        else:
+            for line_idx, row in enumerate(self.matrix):
+                found_forklift = False
+                found_exit = False
+                for col_idx, value in enumerate(row):
+                    if value == constants.FORKLIFT:
+                        self.line_forklift = line_idx
+                        self.column_forklift = col_idx
+                        found_forklift = True
+                    if value == constants.EXIT:
+                        self.line_exit = line_idx
+                        self.column_exit = col_idx
+                        found_exit = True
+                    if found_forklift and found_exit:
+                        return  # Exit the loop if all values are assigned
 
     def can_move_up(self) -> bool:
         return self.line_forklift > 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
