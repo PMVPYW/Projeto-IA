@@ -10,13 +10,21 @@ class IntVectorIndividual(Individual):
     def __init__(self, problem: Problem, num_genes: int):
         super().__init__(problem, num_genes)
         self.genome = np.full(num_genes, 0, dtype=int)
+        forks = 2 #2 because pmx recombination
         for i in range(self.num_genes):
             already_in_genome = True
             while already_in_genome:
                 already_in_genome = False
-                rdn = random.randint(1, self.num_genes)
+                rdn = random.randint(0, self.num_genes - len(self.problem.forklifts))
 
                 already_in_genome = np.isin(rdn, self.genome)
+
+                if rdn == 0:
+                    already_in_genome = True
+                    if forks < len(self.problem.forklifts) + 2: #+2 because pmx recombination
+                        self.genome[i] = -forks
+                        forks += 1
+                        break
 
                 if not already_in_genome:
                     self.genome[i] = rdn

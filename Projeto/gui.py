@@ -623,6 +623,7 @@ class SearchSolver(threading.Thread):
         self.agent.stop()
 
     def run(self):
+        # TODO calculate pairs distances #(calcular caminho(solução), custo e armazenar algures) (porque não guardar a solução e o custo na class par?)
         state = copy.deepcopy(self.gui.initial_state)
         for pair in self.agent.pairs:
             '''problem = WarehouseProblemSearch(
@@ -681,7 +682,7 @@ class SolutionRunner(threading.Thread):
                 else:
                     self.state.matrix[old_cell[j].line][old_cell[j].column] = constants.FORKLIFT
 
-                # TODO put only the catched products in black
+                # TODO put the catched products in black
                 if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][new_cell.column - 1] == constants.PRODUCT:
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
                 elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][new_cell.column + 1] == constants.PRODUCT:

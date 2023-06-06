@@ -17,14 +17,15 @@ class WarehouseIndividual(IntVectorIndividual):
     def compute_fitness(self) -> float:
         not_reached = [x for x in range(1, len(self.problem.products)+1)]
         products = self.problem.products
-        num_prods = len(products)
         # TODO - Alterar genoma para identificar apenas o produto a fazer pick e humano tem de procurar melhor par
+        if (self.genome[2] == -2):
+            a = 0
         fitness = 0
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
         last_pos = self.problem.forklifts[forklift_index]
         for i in range(len(self.genome)):
-            if self.genome[i] > num_prods:
+            if self.genome[i] < 1:
                 end_point = self.problem.exit
                 fitness += self.get_pair_value(last_pos, end_point)
                 forklift_index += 1
@@ -41,7 +42,7 @@ class WarehouseIndividual(IntVectorIndividual):
             last_pos = products[self.genome[i] - 1]
             not_reached.remove(self.genome[i])
         #saida
-        #last_pos = products[self.genome[-1] - 1]
+        last_pos = products[self.genome[-1] - 1]
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
 
@@ -72,11 +73,10 @@ class WarehouseIndividual(IntVectorIndividual):
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
         products = self.problem.products
-        num_prods = len(products)
         last_pos = self.problem.forklifts[forklift_index]
         partial_path = [last_pos]
         for i in range(len(self.genome)):
-            if self.genome[i] > num_prods:
+            if self.genome[i] < 1 :
                 end_point = self.problem.exit
                 partial_path += self.get_pair_path(last_pos, end_point)
                 partial_path.append(end_point)
@@ -92,9 +92,6 @@ class WarehouseIndividual(IntVectorIndividual):
             end_point = products[self.genome[i] - 1]
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[self.genome[i] - 1]
-        end_point = self.problem.exit
-        partial_path += self.get_pair_path(last_pos, end_point)
-        partial_path.append(end_point)
         path.append(partial_path)
         steps = max(steps, len(partial_path))
         return path, steps
