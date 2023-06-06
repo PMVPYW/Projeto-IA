@@ -12,13 +12,13 @@ from agentsearch.action import Action
 
 class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
-    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None, exit_line: int = None, exit_col: int= None): #TODO --> receber tb exit no construtor
+    def __init__(self, matrix: ndarray, rows, columns, forklift_line: int = None, forklift_col: int= None, exit_line: int = None, exit_col: int= None):
         super().__init__()
         # //question --> agent can be in exit cell?
 
         self.rows = rows
         self.columns = columns
-        self.matrix = np.copy(matrix)  # np.full([self.rows, self.columns], fill_value=0, dtype=int) #TODO --> Transform array to int array
+        self.matrix = np.copy(matrix)
 
         self.line_forklift = forklift_line
         self.column_forklift = forklift_col

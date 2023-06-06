@@ -63,7 +63,6 @@ class WarehouseExperimentsFactory(ExperimentsFactory):
         matrix, num_rows, num_columns = read_state_from_txt_file(self.get_parameter_value("Problem_file"))
 
         agent_search = WarehouseAgentSearch(WarehouseState(matrix, num_rows, num_columns))
-        # TODO calculate pair distances
         self.problem = WarehouseProblemGA(agent_search)
 
         experiment_textual_representation = self.build_experiment_textual_representation()

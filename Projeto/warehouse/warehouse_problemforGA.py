@@ -14,7 +14,6 @@ class WarehouseProblemGA(Problem):
         self.agent_search = agent_search
         self.exit = agent_search.exit
 
-    #TODO --> Change genome to picks + products - 1
     def generate_individual(self) -> "WarehouseIndividual":
         return WarehouseIndividual(self, len(self.products) + len(self.forklifts) - 1)
 

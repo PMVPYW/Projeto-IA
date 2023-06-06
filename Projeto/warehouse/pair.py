@@ -9,7 +9,6 @@ class Pair:
         self.cell2 = cell2
         self.cost = 0
         self.solution = None
-        # TODO? --> guardar caminho e custo, verificar se coordenada é agente ou pick (picks guardados no agente(pick == agente))
 
     def get_path(self):
         if self.solution is None:

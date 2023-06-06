@@ -272,7 +272,8 @@ class Window(tk.Tk):
             matrix = matrix.astype(int)
             line_exit = column_exit = None
             #TODO --> descobrir onde está o exit para consumo da gui
-            self.initial_state = WarehouseState(matrix, num_rows, num_columns)#TODO --> add here line_exit and column_exit
+            self.initial_state = WarehouseState(matrix, num_rows, num_columns)
+            #TODO --> add here line_exit and column_exit
             self.agent_search = WarehouseAgentSearch(WarehouseState(matrix, num_rows, num_columns))
             self.solution = None
             self.text_problem.delete("1.0", "end")
@@ -669,8 +670,8 @@ class SolutionRunner(threading.Thread):
                 return
             for j in range(len(forklift_path)):
                 if old_cell[j] is None:
-                    firs_cell = forklift_path[j][0]
-                    old_cell[j] = firs_cell
+                    first_cell = forklift_path[j][0]
+                    old_cell[j] = first_cell
                 if step < len(forklift_path[j]) - 1:
                     if old_cell[j] not in new_cells:
                         self.state.matrix[old_cell[j].line][old_cell[j].column] = constants.EMPTY
@@ -681,13 +682,17 @@ class SolutionRunner(threading.Thread):
                 else:
                     self.state.matrix[old_cell[j].line][old_cell[j].column] = constants.FORKLIFT
 
-                # TODO put only the catched products in black
-                if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][new_cell.column - 1] == constants.PRODUCT:
+                # Put only the caught products in black
+                if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][
+                    new_cell.column - 1] == constants.PRODUCT:
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
-                elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][new_cell.column + 1] == constants.PRODUCT:
+                elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][
+                    new_cell.column + 1] == constants.PRODUCT:
                     self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
-                #reput the exit at blue
+                # Reput the exit as blue
                 self.state.matrix[self.state.line_exit][self.state.column_exit] = constants.EXIT
+
             self.gui.queue.put((copy.deepcopy(self.state), step, False))
         self.gui.queue.put((None, steps, True))  # Done
+
 
