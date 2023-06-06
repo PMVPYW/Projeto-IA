@@ -25,7 +25,7 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
         self.line_exit = exit_line
         self.column_exit = exit_col
 
-        # possivel otimizar(dá pontos)
+        # TODO - Possible Optimizations (Gives Extra Points)
         if self.line_forklift is not None and self.column_forklift is not None and exit_line is not None and exit_col is not None:
             return  # Skip the loop if variables are already assigned
         else:
