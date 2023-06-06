@@ -6,6 +6,7 @@ import numpy as np
 
 class IntVectorIndividual(Individual):
 
+    #TODO --> Change genome to only positive numbers
     def __init__(self, problem: Problem, num_genes: int):
         super().__init__(problem, num_genes)
         self.genome = np.full(num_genes, 0, dtype=int)

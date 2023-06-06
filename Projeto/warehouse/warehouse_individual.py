@@ -13,6 +13,7 @@ class WarehouseIndividual(IntVectorIndividual):
         super().__init__(problem, num_genes)
 
 
+    #TODO --> Change genome to only positive numbers
     def compute_fitness(self) -> float:
         not_reached = [x for x in range(1, len(self.problem.products)+1)]
         products = self.problem.products
