@@ -16,7 +16,7 @@ class WarehouseProblemGA(Problem):
 
     #TODO --> Change genome to picks + products - 1
     def generate_individual(self) -> "WarehouseIndividual":
-        return WarehouseIndividual(self, len(self.products) + len(self.forklifts))
+        return WarehouseIndividual(self, len(self.products) + len(self.forklifts) - 1)
 
     def __str__(self):
         string = "# of forklifts: "
