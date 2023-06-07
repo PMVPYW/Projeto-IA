@@ -46,9 +46,9 @@ class WarehouseIndividual(IntVectorIndividual):
     def get_pair_path(self, start: Cell, end: Cell):
         for x in self.problem.agent_search.pairs:
             if x.cell1 == start and x.cell2 == end:
-                return x.get_path()
+                return x.path
             elif x.cell2 == start and x.cell1 == end:
-                return x.get_path()[::-1]
+                return x.path[::-1]
 
     def obtain_all_path(self):
         path = []
@@ -80,6 +80,15 @@ class WarehouseIndividual(IntVectorIndividual):
         partial_path.append(end_point)
         path.append(partial_path)
         steps = max(steps, len(partial_path))
+
+        #print path --> delete later #TODO
+        for x in path:
+            print("[ ", end=" ")
+            for p_x in x:
+                print(p_x, end=" ")
+            print("]")
+
+
         return path, steps
 
     def __str__(self):

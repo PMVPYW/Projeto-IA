@@ -626,14 +626,10 @@ class SearchSolver(threading.Thread):
     def run(self):
         state = copy.deepcopy(self.gui.initial_state)
         for pair in self.agent.pairs:
-            '''problem = WarehouseProblemSearch(
-                WarehouseState(self.agent.initial_environment.matrix, self.agent.initial_environment.rows, self.agent.initial_environment.columns,
-                               pair.cell1.line, pair.cell1.column),
-                pair.cell2)'''
             state.column_forklift = pair.cell1.column
             state.line_forklift = pair.cell1.line
             self.agent.solve_problem(WarehouseProblemSearch(state, pair.cell2))
-            pair.solution = self.agent.solution
+            pair.get_path(self.agent.solution)
             pair.cost = self.agent.solution.cost
             print(self.agent.solution, self.agent.solution.cost)
         self.agent.search_method.stopped=True

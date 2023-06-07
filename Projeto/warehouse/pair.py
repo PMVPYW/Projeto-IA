@@ -8,18 +8,19 @@ class Pair:
         self.cell1 = cell1
         self.cell2 = cell2
         self.cost = 0
-        self.solution = None
+        self.path = []
 
-    def get_path(self):
-        if self.solution is None:
+    def get_path(self, solution):
+        if solution is None:
             return None
-        problem = copy.deepcopy(self.solution.problem)
+        problem = copy.deepcopy(solution.problem)
         problem.initial_state.line_forklift = self.cell1.line
         problem.initial_state.column_forklift = self.cell1.column
         path = []
-        for action in self.solution.actions:
+        for action in solution.actions:
             problem.initial_state = problem.get_successor(problem.initial_state, action)
             path.append(Cell(problem.initial_state.line_forklift, problem.initial_state.column_forklift))
+        self.path = path
         return path
 
     def hash(self):
@@ -28,8 +29,8 @@ class Pair:
 
     def __str__(self):
         st = ""
-        if not self.solution is None:
-            p = self.get_path()
+        if len(self.path) > 0:
+            p = self.path
             st = "path: ["
             for x in p:
                 st += str(x) + ","

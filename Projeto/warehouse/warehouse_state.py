@@ -45,6 +45,7 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
                         return  # Exit the loop if all values are assigned
 
     def can_move_up(self) -> bool:
+        #extra verification (does it is in a shelf? (have a shelf in one of the sides and down)
         return self.line_forklift > 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
 
     def can_move_right(self) -> bool:
