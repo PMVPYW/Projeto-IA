@@ -46,13 +46,13 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
 
     def can_move_up(self) -> bool:
         #extra verification (does it is in a shelf? (have a shelf in one of the sides and down)
-        return self.line_forklift > 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift > 0 and self.matrix[self.line_forklift - 1][self.column_forklift] == constants.EMPTY and self.line_forklift > 0 and not self.matrix[self.line_forklift][self.column_forklift] == constants.PRODUCT
 
     def can_move_right(self) -> bool:
         return self.column_forklift < self.columns - 1 and self.matrix[self.line_forklift][self.column_forklift + 1] == constants.EMPTY
 
     def can_move_down(self) -> bool:
-        return self.line_forklift < self.rows - 1 and self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY
+        return self.line_forklift < self.rows - 1 and self.matrix[self.line_forklift + 1][self.column_forklift] == constants.EMPTY and not self.matrix[self.line_forklift][self.column_forklift] == constants.PRODUCT
 
     def can_move_left(self) -> bool:
         return self.column_forklift > 0 and self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
