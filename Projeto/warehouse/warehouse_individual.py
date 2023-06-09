@@ -51,6 +51,8 @@ class WarehouseIndividual(IntVectorIndividual):
 
     def obtain_all_path(self):
         path = []
+        targets = []
+        partial_targets = []
         steps = 0
         forklift_index = 0
         max_forklift_index = len(self.problem.forklifts)
@@ -67,20 +69,24 @@ class WarehouseIndividual(IntVectorIndividual):
                 if not forklift_index < max_forklift_index:
                     break
                 path.append(partial_path)
+                targets.append(partial_targets)
+                partial_targets = []
                 last_pos = self.problem.forklifts[forklift_index]
                 steps = max(steps, len(partial_path))
                 partial_path = [last_pos]
                 continue
             end_point = products[gene - 1]
+            partial_targets.append(end_point.column)
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[gene - 1]
         end_point = self.problem.exit
         partial_path += self.get_pair_path(last_pos, end_point)
         partial_path.append(end_point)
         path.append(partial_path)
+        targets.append(partial_targets)
         steps = max(steps, len(partial_path))
 
-        return path, steps
+        return path, steps, targets
 
     def __str__(self):
         string = 'Fitness: ' + f'{self.fitness}' + '\n'

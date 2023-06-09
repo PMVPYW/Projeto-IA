@@ -657,8 +657,9 @@ class SolutionRunner(threading.Thread):
 
     def run(self):
         self.thread_running = True
-        forklift_path, steps = self.best_in_run.obtain_all_path()
+        forklift_path, steps, targets = self.best_in_run.obtain_all_path()
         old_cell = [None] * len(forklift_path)
+        targets_indexes = [0 for i in range(len(targets))]
         new_cells = []
         for step in range(steps - 1):
             new_cells.clear()
@@ -680,11 +681,13 @@ class SolutionRunner(threading.Thread):
 
                 # Put only the caught products in black
                 if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][
-                    new_cell.column - 1] == constants.PRODUCT:
+                    new_cell.column - 1] == constants.PRODUCT and new_cell.column - 1 == targets[j][targets_indexes[j]]:
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
+                    targets_indexes[j] += 1
                 elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][
-                    new_cell.column + 1] == constants.PRODUCT:
+                    new_cell.column + 1] == constants.PRODUCT and new_cell.column + 1 == targets[j][targets_indexes[j]]:
                     self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
+                    targets_indexes[j] += 1
                 # Reput the exit as blue
                 self.state.matrix[self.state.line_exit][self.state.column_exit] = constants.EXIT
 
