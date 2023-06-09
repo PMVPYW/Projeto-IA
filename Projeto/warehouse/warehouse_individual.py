@@ -35,7 +35,6 @@ class WarehouseIndividual(IntVectorIndividual):
         forklift_costs[forklift_index] = fitness
         fitness = sum(forklift_costs) * max(forklift_costs)
         self.fitness = fitness
-        print(forklift_costs)
         return fitness
 
     def get_pair_value(self, start: Cell, end: Cell):
@@ -80,14 +79,6 @@ class WarehouseIndividual(IntVectorIndividual):
         partial_path.append(end_point)
         path.append(partial_path)
         steps = max(steps, len(partial_path))
-
-        #print path --> delete later #TODO
-        for x in path:
-            print("[ ", end=" ")
-            for p_x in x:
-                print(p_x, end=" ")
-            print("]")
-
 
         return path, steps
 
