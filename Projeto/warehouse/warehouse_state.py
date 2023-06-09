@@ -58,32 +58,19 @@ class WarehouseState(State[Action]):  # podemos adicionar/alterar métodos
         return self.column_forklift > 0 and self.matrix[self.line_forklift][self.column_forklift - 1] == constants.EMPTY
 
     def move_up(self) -> None:
-        #print(f"UP({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift -= 1;
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
-        #print(f"{self.line_forklift},   {self.column_forklift})")
+
 
     def move_right(self) -> None:
-        #print(f"RIGHT({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift += 1
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
-        #print(f"{self.line_forklift},   {self.column_forklift})")
+
 
     def move_down(self) -> None:
-        #print(f"DOWN({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.line_forklift += 1;
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
-        #print(f"{self.line_forklift},   {self.column_forklift})")
+
 
     def move_left(self) -> None:
-        #print(f"LEFT({self.line_forklift},   {self.column_forklift}) --> ", end="")
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.EMPTY
         self.column_forklift -= 1
-        #self.matrix[self.line_forklift][self.column_forklift] = constants.FORKLIFT
-        #print(f"{self.line_forklift},   {self.column_forklift})")
 
     def get_cell_color(self, row: int, column: int) -> Color:
         if self.matrix[row][column] == constants.EXIT:
