@@ -8,6 +8,9 @@ class WarehouseIndividual(IntVectorIndividual):
 
     def __init__(self, problem: "WarehouseProblem", num_genes: int):
         super().__init__(problem, num_genes)
+        self.paths = None
+        self.steps = None
+        self.targets = None
 
     def compute_fitness(self) -> float:
 
@@ -50,6 +53,8 @@ class WarehouseIndividual(IntVectorIndividual):
                 return x.path[::-1]
 
     def obtain_all_path(self):
+        if self.paths != None and self.targets != None and self.steps != None:
+            return self.paths, self.steps, self.targets
         path = []
         targets = []
         partial_targets = []
@@ -85,7 +90,9 @@ class WarehouseIndividual(IntVectorIndividual):
         path.append(partial_path)
         targets.append(partial_targets)
         steps = max(steps, len(partial_path))
-
+        self.paths = path
+        self.steps = steps
+        self.targets = targets
         return path, steps, targets
 
     def __str__(self):
