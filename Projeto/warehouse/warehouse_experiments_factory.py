@@ -13,6 +13,7 @@ from experiments_statistics.statistic_best_in_run import StatisticBestInRun
 from experiments_statistics.statistic_best_average import StatisticBestAverage
 from warehouse.warehouse_agent_search import read_state_from_txt_file, WarehouseAgentSearch
 from warehouse.warehouse_problemforGA import WarehouseProblemGA
+from warehouse.warehouse_problemforSearch import WarehouseProblemSearch
 from warehouse.warehouse_state import WarehouseState
 
 
@@ -61,9 +62,19 @@ class WarehouseExperimentsFactory(ExperimentsFactory):
 
         # PROBLEM
         matrix, num_rows, num_columns = read_state_from_txt_file(self.get_parameter_value("Problem_file"))
-
-        agent_search = WarehouseAgentSearch(WarehouseState(matrix, num_rows, num_columns))
+        matrix = matrix.astype(int)
+        line_exit = column_exit = None
+        state = WarehouseState(matrix, num_rows, num_columns)
+        agent_search = WarehouseAgentSearch(state)
+        for pair in agent_search.pairs:
+            state.column_forklift = pair.cell1.column
+            state.line_forklift = pair.cell1.line
+            agent_search.solve_problem(WarehouseProblemSearch(state, pair.cell2))
+            pair.get_path(agent_search.solution)
+            pair.cost = agent_search.solution.cost
+            print(agent_search.solution, agent_search.solution.cost)
         self.problem = WarehouseProblemGA(agent_search)
+
 
         experiment_textual_representation = self.build_experiment_textual_representation()
         experiment_header = self.build_experiment_header()

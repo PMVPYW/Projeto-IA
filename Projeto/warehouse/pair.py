@@ -21,6 +21,7 @@ class Pair:
             problem.initial_state = problem.get_successor(problem.initial_state, action)
             path.append(Cell(problem.initial_state.line_forklift, problem.initial_state.column_forklift))
         self.path = path
+
         return path
 
     def hash(self):

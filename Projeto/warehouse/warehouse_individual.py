@@ -13,7 +13,6 @@ class WarehouseIndividual(IntVectorIndividual):
         self.targets = None
 
     def compute_fitness(self) -> float:
-
         products = self.problem.products
         num_prods = len(products)
         fitness = 0
@@ -32,6 +31,7 @@ class WarehouseIndividual(IntVectorIndividual):
                 continue
             end_point = products[gene - 1]
             fitness += self.get_pair_value(last_pos, end_point)
+            print(self.get_pair_value(last_pos, end_point))
             last_pos = products[gene - 1]
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
@@ -109,5 +109,7 @@ class WarehouseIndividual(IntVectorIndividual):
         new_instance.genome = copy.copy(self.genome)
         new_instance.fitness = self.fitness
         # TODO
-        # new_instance.problem = copy.deepcopy(self.problem)
+        new_instance.steps = self.steps
+        new_instance.paths = self.paths
+        new_instance.targets = self.targets
         return new_instance
