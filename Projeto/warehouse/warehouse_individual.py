@@ -31,7 +31,6 @@ class WarehouseIndividual(IntVectorIndividual):
                 continue
             end_point = products[gene - 1]
             fitness += self.get_pair_value(last_pos, end_point)
-            print(self.get_pair_value(last_pos, end_point))
             last_pos = products[gene - 1]
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
