@@ -271,9 +271,9 @@ class Window(tk.Tk):
             matrix, num_rows, num_columns = read_state_from_txt_file(filename)
             matrix = matrix.astype(int)
             line_exit = column_exit = None
-            #TODO --> descobrir onde está o exit para consumo da gui
+            # TODO --> descobrir onde está o exit para consumo da gui
             self.initial_state = WarehouseState(matrix, num_rows, num_columns)
-            #TODO --> add here line_exit and column_exit
+            # TODO --> add here line_exit and column_exit
             self.agent_search = WarehouseAgentSearch(WarehouseState(matrix, num_rows, num_columns))
             self.solution = None
             self.text_problem.delete("1.0", "end")
@@ -291,7 +291,7 @@ class Window(tk.Tk):
 
     def runSearch_button_clicked(self):
 
-        self.agent_search.search_method.stopped=False
+        self.agent_search.search_method.stopped = False
 
         self.text_problem.delete("1.0", "end")
 
@@ -375,7 +375,7 @@ class Window(tk.Tk):
             if done:
                 self.queue.queue.clear()
                 self.after_cancel(self.after_id)
-                self.after_id= None
+                self.after_id = None
                 self.solution_runner = None
                 self.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
                                     open_experiments=tk.NORMAL, run_experiments=tk.DISABLED,
@@ -414,7 +414,6 @@ class Window(tk.Tk):
             self.solver = None
             return
 
-
         if self.solution_runner is not None and self.solution_runner.thread_running:
             self.solution_runner.stop()
             self.queue.queue.clear()
@@ -435,9 +434,6 @@ class Window(tk.Tk):
                                 open_experiments=tk.NORMAL, run_experiments=tk.DISABLED, stop_experiments=tk.DISABLED,
                                 simulation=tk.DISABLED, stop_simulation=tk.DISABLED)
             self.genetic_algorithm = None
-
-
-
 
     def open_experiments_button_clicked(self):
         filename = fd.askopenfilename(initialdir='.')
@@ -593,22 +589,37 @@ class ExperimentsRunner(threading.Thread):
 
     def stop(self):
         self.thread_running = False
-        self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
+        self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.DISABLED, stop=tk.DISABLED,
                                 open_experiments=tk.NORMAL, run_experiments=tk.NORMAL,
                                 stop_experiments=tk.DISABLED, simulation=tk.DISABLED, stop_simulation=tk.DISABLED)
 
     def run(self):
         self.thread_running = True
+        n_experiments = self.experiments_factory.total_experiments()
+
+        # create window
+        current_experiment = tk.IntVar()
+
+        progress_bar = ttk.Progressbar(self.gui, mode='determinate', variable=current_experiment, maximum=n_experiments)
+        progress_bar.text = "progress"
+        progress_bar.pack()
+        current_experiment.set(0)
+        self.gui.title(f'Genetic Algorithms | Running Experiment: 0%')
 
         while self.experiments_factory.has_more_experiments() and self.thread_running:
             experiment = self.experiments_factory.next_experiment()
             experiment.run()
+            current_experiment.set(current_experiment.get() + 1)
+            self.gui.title(f'Genetic Algorithms | Running Experiment: {round(current_experiment.get() / n_experiments * 100)}%')
 
         self.gui.text_best.insert(tk.END, '')
         if self.thread_running:
             self.gui.entry_status.delete(0, tk.END)
             self.gui.entry_status.insert(tk.END, 'Done')
-            self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
+            messagebox.showinfo("Experiments terminated", "Experiments terminated succesfuly!")
+            progress_bar.destroy()
+            self.gui.title(f'Genetic Algorithms')
+            self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.DISABLED, stop=tk.DISABLED,
                                     open_experiments=tk.NORMAL, run_experiments=tk.DISABLED,
                                     stop_experiments=tk.DISABLED, simulation=tk.DISABLED, stop_simulation=tk.DISABLED)
 
@@ -632,7 +643,7 @@ class SearchSolver(threading.Thread):
             pair.get_path(self.agent.solution)
             pair.cost = self.agent.solution.cost
             print(self.agent.solution, self.agent.solution.cost)
-        self.agent.search_method.stopped=True
+        self.agent.search_method.stopped = True
         self.gui.problem_ga = WarehouseProblemGA(self.agent)
         print("ga problem: ", self.gui.problem_ga)
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.NORMAL, stop=tk.DISABLED,
@@ -680,13 +691,15 @@ class SolutionRunner(threading.Thread):
                 else:
                     self.state.matrix[old_cell[j].line][old_cell[j].column] = constants.FORKLIFT
 
-                                    # Put only the caught products in black
+                    # Put only the caught products in black
                 if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][
-                    new_cell.column - 1] == constants.PRODUCT and targets_indexes[j] < len(targets[j]) and new_cell.column - 1 == targets[j][targets_indexes[j]]:
+                    new_cell.column - 1] == constants.PRODUCT and targets_indexes[j] < len(
+                    targets[j]) and new_cell.column - 1 == targets[j][targets_indexes[j]]:
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
                     targets_indexes[j] += 1
                 if new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][
-                    new_cell.column + 1] == constants.PRODUCT and targets_indexes[j] < len(targets[j]) and new_cell.column + 1 == targets[j][targets_indexes[j]]:
+                    new_cell.column + 1] == constants.PRODUCT and targets_indexes[j] < len(
+                    targets[j]) and new_cell.column + 1 == targets[j][targets_indexes[j]]:
                     self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
                     targets_indexes[j] += 1
 
@@ -695,5 +708,3 @@ class SolutionRunner(threading.Thread):
 
             self.gui.queue.put((copy.deepcopy(self.state), step, False))
         self.gui.queue.put((None, steps, True))  # Done
-
-

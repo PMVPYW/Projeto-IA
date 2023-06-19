@@ -25,6 +25,13 @@ class ExperimentsFactory(ABC):
     def generate_ga_instance(self, seed: int) -> GeneticAlgorithm:
         pass
 
+    def total_experiments(self) -> int:
+        s = 1
+        for x in self.ordered_parameters_array:
+            s *= len(x.values)
+        return s
+
+
     def has_more_experiments(self) -> bool:
         return self.ordered_parameters_array[0].active_value_index < len(self.ordered_parameters_array[0].values)
 
