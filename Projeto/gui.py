@@ -586,9 +586,12 @@ class ExperimentsRunner(threading.Thread):
         self.gui = gui
         self.experiments_factory = gui.experiments_factory
         self.thread_running = False
+        self.progress_bar = None
 
     def stop(self):
         self.thread_running = False
+        self.progress_bar.destroy()
+        self.gui.title(f'Genetic Algorithms')
         self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.DISABLED, stop=tk.DISABLED,
                                 open_experiments=tk.NORMAL, run_experiments=tk.NORMAL,
                                 stop_experiments=tk.DISABLED, simulation=tk.DISABLED, stop_simulation=tk.DISABLED)
@@ -600,9 +603,9 @@ class ExperimentsRunner(threading.Thread):
         # create window
         current_experiment = 0
 
-        progress_bar = ttk.Progressbar(self.gui, length=100, mode='indeterminate')
-        progress_bar.start(100)
-        progress_bar.pack()
+        self.progress_bar = ttk.Progressbar(self.gui, length=100, mode='indeterminate')
+        self.progress_bar.pack()
+        self.progress_bar.start(100)
 
 
         self.gui.title(f'Genetic Algorithms | Running Experiment: 0%')
@@ -618,7 +621,7 @@ class ExperimentsRunner(threading.Thread):
             self.gui.entry_status.delete(0, tk.END)
             self.gui.entry_status.insert(tk.END, 'Done')
             messagebox.showinfo("Experiments terminated", "Experiments terminated succesfuly!")
-            progress_bar.destroy()
+            self.progress_bar.destroy()
             self.gui.title(f'Genetic Algorithms')
             self.gui.manage_buttons(data_set=tk.NORMAL, runSearch=tk.DISABLED, runGA=tk.DISABLED, stop=tk.DISABLED,
                                     open_experiments=tk.NORMAL, run_experiments=tk.DISABLED,
