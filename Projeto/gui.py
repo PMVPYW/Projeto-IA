@@ -598,19 +598,20 @@ class ExperimentsRunner(threading.Thread):
         n_experiments = self.experiments_factory.total_experiments()
 
         # create window
-        current_experiment = tk.IntVar()
+        current_experiment = 0
 
-        progress_bar = ttk.Progressbar(self.gui, mode='determinate', variable=current_experiment, maximum=n_experiments)
-        progress_bar.text = "progress"
+        progress_bar = ttk.Progressbar(self.gui, length=100, mode='indeterminate')
+        progress_bar.start(100)
         progress_bar.pack()
-        current_experiment.set(0)
+
+
         self.gui.title(f'Genetic Algorithms | Running Experiment: 0%')
 
         while self.experiments_factory.has_more_experiments() and self.thread_running:
             experiment = self.experiments_factory.next_experiment()
             experiment.run()
-            current_experiment.set(current_experiment.get() + 1)
-            self.gui.title(f'Genetic Algorithms | Running Experiment: {round(current_experiment.get() / n_experiments * 100)}%')
+            current_experiment += 1
+            self.gui.title(f'Genetic Algorithms | Running Experiment: {round(current_experiment / n_experiments * 100)}%')
 
         self.gui.text_best.insert(tk.END, '')
         if self.thread_running:
