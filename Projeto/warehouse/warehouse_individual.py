@@ -1,5 +1,7 @@
 import copy
 
+import numpy as np
+
 from ga.individual_int_vector import IntVectorIndividual
 from warehouse.cell import Cell
 
@@ -35,9 +37,51 @@ class WarehouseIndividual(IntVectorIndividual):
         end_point = self.problem.exit
         fitness += self.get_pair_value(last_pos, end_point)
         forklift_costs[forklift_index] = fitness
+        fitness += self.getColisionsNumber()
         fitness = sum(forklift_costs) * max(forklift_costs)
         self.fitness = fitness
         return fitness
+
+    def getColisionsNumber(self) -> int:
+        colisions = 0
+        #colisões nos cruzamentos
+        paths, steps, targets = self.obtain_all_path()
+        paths = copy.deepcopy(paths)
+
+        forklift_number = len(self.problem.forklifts)
+
+        for path in paths:
+            while len(path) != steps:
+                path.append(None)
+
+        #deteção em cruzamentos
+
+        colisions += self.count_crossway_colisions(steps, paths)
+
+        print("Colisions: ", colisions)
+        return colisions
+
+    def count_crossway_colisions(self, steps, paths):
+        colisions = 0
+        forklift_number = len(self.problem.forklifts)
+        current_positions = [None for x in range(forklift_number)]
+        for i in range(steps):
+            for j in range(forklift_number):
+                current_positions[j] = paths[j][i]
+            cols = 0
+            for k in range(forklift_number):
+                for h in range(forklift_number):
+                    if (k != h):
+                        cell1 = current_positions[k]
+                        cell2 = current_positions[h]
+                        if cell1 is None or cell2 is None:
+                            continue
+                        if cell1.line == cell2.line and cell1.column == cell2.column:
+                            cols += 1
+                #cols += current_positions.count(current_positions[k])
+            #cols -= forklift_number
+            colisions += cols // 2
+        return colisions
 
     def get_pair_value(self, start: Cell, end: Cell):
         for x in self.problem.agent_search.pairs:

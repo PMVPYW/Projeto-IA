@@ -2,6 +2,7 @@ import random
 from abc import abstractmethod
 from ga.problem import Problem
 from ga.individual import Individual
+from ga.genetic_algorithm import GeneticAlgorithm
 import numpy as np
 
 class IntVectorIndividual(Individual):
@@ -13,7 +14,8 @@ class IntVectorIndividual(Individual):
             already_in_genome = True
             while already_in_genome:
                 already_in_genome = False
-                rdn = random.randint(1, self.num_genes)
+                GeneticAlgorithm.rand
+                rdn = GeneticAlgorithm.rand.randint(1, self.num_genes)
 
                 already_in_genome = np.isin(rdn, self.genome)
 
