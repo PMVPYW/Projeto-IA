@@ -700,17 +700,20 @@ class SolutionRunner(threading.Thread):
                     # Put only the caught products in black
                 if new_cell.column - 1 >= 0 and self.state.matrix[new_cell.line][
                     new_cell.column - 1] == constants.PRODUCT and targets_indexes[j] < len(
-                    targets[j]) and new_cell.column - 1 == targets[j][targets_indexes[j]]:
+                    targets[j]) and new_cell.column - 1 == targets[j][targets_indexes[j]].column and new_cell.line == targets[j][targets_indexes[j]].line:
                     self.state.matrix[new_cell.line][new_cell.column - 1] = constants.PRODUCT_CATCH
                     targets_indexes[j] += 1
                 elif new_cell.column + 1 < self.state.columns and self.state.matrix[new_cell.line][
                     new_cell.column + 1] == constants.PRODUCT and targets_indexes[j] < len(
-                    targets[j]) and new_cell.column + 1 == targets[j][targets_indexes[j]]:
+                    targets[j]) and new_cell.column + 1 == targets[j][targets_indexes[j]].column and new_cell.line == targets[j][targets_indexes[j]].line:
                     self.state.matrix[new_cell.line][new_cell.column + 1] = constants.PRODUCT_CATCH
                     targets_indexes[j] += 1
+
+
 
                 # Reput the exit as blue
                 self.state.matrix[self.state.line_exit][self.state.column_exit] = constants.EXIT
 
             self.gui.queue.put((copy.deepcopy(self.state), step, False))
+        print(sum(targets_indexes))
         self.gui.queue.put((None, steps, True))  # Done

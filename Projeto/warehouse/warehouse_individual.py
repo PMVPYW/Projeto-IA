@@ -162,7 +162,7 @@ class WarehouseIndividual(IntVectorIndividual):
                 partial_path = [last_pos]
                 continue
             end_point = products[gene - 1]
-            partial_targets.append(end_point.column)
+            partial_targets.append(end_point)
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[gene - 1]
         end_point = self.problem.exit
