@@ -65,10 +65,7 @@ class WarehouseIndividual(IntVectorIndividual):
 
         return colisions
 
-    def count_sameroad_colisions(self, paths):
-        colisions = 0
-        current_positions = [[None, None] for ]
-        return colisions
+    
 
     def count_crossway_colisions(self, paths):
         colisions = 0
