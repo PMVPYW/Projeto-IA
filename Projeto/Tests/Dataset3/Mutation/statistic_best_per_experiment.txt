@@ -1,0 +1,12 @@
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.1)
+Fitness: 9540
+[5, 11, 18, 20, 17, 22, 6, 2, 1, 3, 7, 9, 21, 14, 13, 10, 8, 4, 12, 15, 16, 19]
+
+
+
+# --------------------------------------------------------------

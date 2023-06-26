@@ -10,3 +10,75 @@ Fitness: 15662
 
 
 # --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 14586
+[5, 11, 22, 6, 2, 1, 7, 3, 4, 10, 14, 13, 8, 9, 21, 12, 15, 16, 20, 17, 18, 19]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 15318
+[3, 7, 5, 11, 18, 12, 21, 9, 4, 8, 1, 2, 6, 19, 22, 10, 16, 15, 17, 20, 13, 14]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 16555
+[16, 15, 20, 5, 11, 18, 22, 3, 7, 4, 2, 6, 1, 19, 21, 14, 17, 13, 12, 10, 8, 9]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 14904
+[12, 15, 16, 20, 17, 11, 5, 22, 7, 3, 1, 2, 6, 8, 13, 14, 21, 18, 10, 4, 9, 19]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 14555
+[4, 6, 2, 1, 7, 3, 19, 21, 8, 10, 16, 15, 5, 9, 22, 13, 14, 12, 18, 11, 17, 20]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 14413
+[16, 15, 20, 11, 18, 17, 21, 3, 7, 4, 5, 9, 22, 14, 13, 12, 10, 8, 1, 2, 6, 19]
+
+
+
+# --------------------------------------------------------------
