@@ -61,7 +61,8 @@ class WarehouseIndividual(IntVectorIndividual):
 
         # deteção em cruzamentos
 
-        colisions += self.count_crossway_colisions(paths)
+        colisions += self.count_crossway_colisions(paths) + self.count_sameroad_colisions(paths)
+
 
         return colisions
 
@@ -69,6 +70,26 @@ class WarehouseIndividual(IntVectorIndividual):
         colisions = 0
         forklifts = len(self.problem.forklifts)
         current_positions = [[None, None] for x in range(forklifts)]
+        for i in range(self.steps):
+            for j in range(forklifts):
+                current_positions[j][0] = current_positions[j][1]
+                current_positions[j][1] = paths[j][i]
+
+            for j in range(forklifts):
+                cell1 = current_positions[j][1]
+                bef_cell1 = current_positions[j][0]
+                if cell1 is None or bef_cell1 is None:
+                    continue
+                for k in range(forklifts):
+                    if (j != k):
+                        cell2 = current_positions[k][1]
+                        bef_cell2 = current_positions[k][0]
+                        if bef_cell2 is None or cell2 is None:
+                            continue
+                        if (cell1.line == bef_cell2.line and cell1.column == bef_cell2.column) and (cell2.line == bef_cell1.line and cell2.column == bef_cell1.column):
+                            colisions += 1
+
+        colisions //= 2
 
         return colisions
 
@@ -141,7 +162,7 @@ class WarehouseIndividual(IntVectorIndividual):
                 partial_path = [last_pos]
                 continue
             end_point = products[gene - 1]
-            partial_targets.append(end_point.column)
+            partial_targets.append(end_point)
             partial_path += self.get_pair_path(last_pos, end_point)
             last_pos = products[gene - 1]
         end_point = self.problem.exit
