@@ -7,3 +7,4 @@ Population size:	Max generations: 	Selection: 	Recombination: 	Mutation:		Averag
 100	12	Tournament selection(4)	PMX recombination (0.8)	Insert Mutation (0.025)		21278.4	2732.370780110196
 100	15	Tournament selection(4)	PMX recombination (0.8)	Insert Mutation (0.025)		20041.14	2872.8199317743533
 100	30	Tournament selection(4)	PMX recombination (0.8)	Insert Mutation (0.025)		17986.04	2654.5106438663984
+100	60	Tournament selection(4)	PMX recombination (0.8)	Insert Mutation (0.025)		16570.22	2330.904736706329

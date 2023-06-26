@@ -94,3 +94,15 @@ Fitness: 12529
 
 
 # --------------------------------------------------------------
+
+Population size: 100
+Max generations: 60
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 12529
+[5, 10, 8, 3, 9, 19, 21, 6, 2, 1, 7, 4, 12, 15, 16, 22, 13, 14, 11, 18, 20, 17]
+
+
+
+# --------------------------------------------------------------

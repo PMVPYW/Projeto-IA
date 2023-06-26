@@ -82,3 +82,27 @@ Fitness: 14413
 
 
 # --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 14210
+[11, 18, 17, 20, 15, 9, 22, 4, 3, 7, 2, 1, 6, 19, 21, 14, 8, 5, 12, 16, 13, 10]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 14819
+[8, 10, 4, 7, 3, 2, 1, 6, 9, 22, 19, 12, 18, 21, 13, 14, 5, 11, 17, 20, 15, 16]
+
+
+
+# --------------------------------------------------------------
