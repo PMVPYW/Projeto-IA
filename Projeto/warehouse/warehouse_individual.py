@@ -65,7 +65,12 @@ class WarehouseIndividual(IntVectorIndividual):
 
         return colisions
 
-    
+    def count_sameroad_colisions(self, paths):
+        colisions = 0
+        forklifts = len(self.problem.forklifts)
+        current_positions = [[None, None] for x in range(forklifts)]
+
+        return colisions
 
     def count_crossway_colisions(self, paths):
         colisions = 0
