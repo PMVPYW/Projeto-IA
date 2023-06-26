@@ -2,6 +2,9 @@
 .DS_Store
 **/.DS_Store
 /.idea
+/Projeto/build
+/Projeto/dist
+
 
 
 # Ignore all subfolders named __pycache__
@@ -11,3 +14,4 @@
 __pycache__/
 
 *.pyc
+*.spec
