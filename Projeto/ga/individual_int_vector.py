@@ -14,7 +14,6 @@ class IntVectorIndividual(Individual):
             already_in_genome = True
             while already_in_genome:
                 already_in_genome = False
-                GeneticAlgorithm.rand
                 rdn = GeneticAlgorithm.rand.randint(1, self.num_genes)
 
                 already_in_genome = np.isin(rdn, self.genome)
