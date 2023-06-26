@@ -24,7 +24,7 @@ Mutation_probability: 0.1,0.3
 
 # --------------------------------
 
-Problem_file: ./data_sets/problem1.txt
+Problem_file: ./data_sets/problem2.txt
 
 # --------------------------------
 
