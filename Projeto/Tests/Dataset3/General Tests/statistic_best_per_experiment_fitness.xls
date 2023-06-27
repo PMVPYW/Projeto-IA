@@ -190,3 +190,16 @@ Population size:	Max generations: 	Selection: 	Recombination: 	Mutation:		Fitnes
 100	50	Tournament selection(6)	PMX recombination (0.8)	Insert Mutation (0.03)		14325
 100	50	Tournament selection(8)	PMX recombination (0.6)	Insert Mutation (0.01)		24929
 100	50	Tournament selection(8)	PMX recombination (0.6)	Insert Mutation (0.025)		18450
+100	50	Tournament selection(8)	PMX recombination (0.6)	Insert Mutation (0.03)		17301
+100	50	Tournament selection(8)	PMX recombination (0.7)	Insert Mutation (0.01)		19522
+100	50	Tournament selection(8)	PMX recombination (0.7)	Insert Mutation (0.025)		19053
+100	50	Tournament selection(8)	PMX recombination (0.7)	Insert Mutation (0.03)		17845
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.01)		17394
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.025)		16926
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.03)		16926
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.01)		17394
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.025)		16926
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.03)		16926
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.01)		17394
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.025)		16926
+100	50	Tournament selection(8)	PMX recombination (0.8)	Insert Mutation (0.03)		16926
