@@ -17,3 +17,4 @@ Fitness_type: 0
 Problem_file: ./dataset.txt
 # --------------------------------
 Statistic: BestIndividual
+Statistic: BestAverage 
