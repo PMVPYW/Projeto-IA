@@ -1,0 +1,3888 @@
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 50
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 100
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(2)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(4)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(6)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.6)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.7)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.01)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.025)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------
+
+Population size: 200
+Max generations: 50
+Selection: Tournament selection(8)
+Recombination: PMX recombination (0.8)
+Mutation:Insert Mutation (0.03)
+Fitness: 196
+[3 2 1]
+
+
+
+# --------------------------------------------------------------

@@ -1,4 +1,4 @@
-Runs: 50
+Runs: 1
 Population_size: 200
 Max_generations: 50
 #--------------------------------
