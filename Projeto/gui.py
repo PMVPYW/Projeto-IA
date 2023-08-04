@@ -389,6 +389,7 @@ class Window(tk.Tk):
         self.after_id = self.after(100, self.show_solution_step)
 
     def draw_state(self, state):
+        self.canvas.delete("all")
         rows = state.rows
         columns = state.columns
         i = 0
